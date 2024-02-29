@@ -1,0 +1,15 @@
+[t38]
+FileName1=t38.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/v1/produce
+Total=3
+RequestHeaderFile=t38_RequestHeader.txt
+RequestBodyFile=t38_RequestBody.txt
+ResponseHeaderFile=t38_ResponseHeader.txt
+ContentType=text/javascript
+SnapshotXmlFile=snapshot_38.xml
+FileName2=t38_cart.html
+URL2=https://www.tastynibbles.in/cart.js
+FileName3=t38_cart.html
+URL3=https://www.tastynibbles.in/cart.js?_=1708661014241
+[ProtocolInfo]
+ProtocolId=QTWeb

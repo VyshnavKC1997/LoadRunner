@@ -1,0 +1,15 @@
+[t21]
+FileName1=t21_login.htm
+URL1=https://www.tastynibbles.in/account/login?return_url=%2Faccount
+Total=3
+ContentType=text/html
+SnapshotXmlFile=snapshot_21.xml
+RequestHeaderFile=t21_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t21_ResponseHeader.txt
+FileName2=t21_preloads.html
+URL2=https://www.tastynibbles.in/checkouts/internal/preloads.js?permanent-domain=tastynibbles.myshopify.com&locale=en-IN
+FileName3=t21_shopify_common-33bb9d312118840468a53f36b59c62c1e8f2b7d1a0a77250db9e300441827470.html
+URL3=https://www.tastynibbles.in/cdn/shopifycloud/shopify/assets/themes_support/shopify_common-33bb9d312118840468a53f36b59c62c1e8f2b7d1a0a77250db9e300441827470.js
+[ProtocolInfo]
+ProtocolId=QTWeb

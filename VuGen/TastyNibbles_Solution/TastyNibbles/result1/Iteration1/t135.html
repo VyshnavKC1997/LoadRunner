@@ -1,0 +1,750 @@
+<!DOCTYPE html><html lang="en-IN" dir="ltr"><head><title>Checkout - Tasty Nibbles</title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, user-scalable=0"/><meta name="referrer" content="origin"/><link rel="preconnect" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/" crossorigin/><link rel="dns-prefetch" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/" crossorigin/><link rel="preconnect" href="https://checkout.shopifycs.com" crossorigin/><link rel="dns-prefetch" href="https://checkout.shopifycs.com" crossorigin/></head><body class="Loading"><style>
+    
+    :root {
+      
+    --x-skeleton--global-accent: #111111;
+
+    --x-skeleton-color-schemes-scheme1-base-background: #ffffff;
+    --x-skeleton-color-schemes-scheme1-base-accent: #111111;
+    --x-skeleton-color-schemes-scheme1-base-backgroundSubdued: #f6f6f6;
+    --x-skeleton-color-schemes-scheme1-base-border: #dfdfdf;
+    --x-skeleton-color-schemes-scheme1-base-text: #000000;
+    --x-skeleton-color-schemes-scheme1-base-textContrast: #ffffff;
+    --x-skeleton-color-schemes-scheme1-base-textSubdued: #0000008f;
+    --x-skeleton-color-schemes-scheme1-base-textSubdued200: #0000001a;
+
+    --x-skeleton-color-schemes-scheme2-base-background: #fafafa;
+    --x-skeleton-color-schemes-scheme2-base-accent: #111111;
+    --x-skeleton-color-schemes-scheme2-base-backgroundSubdued: #f1f1f1;
+    --x-skeleton-color-schemes-scheme2-base-border: #dadada;
+    --x-skeleton-color-schemes-scheme2-base-text: #000000;
+    --x-skeleton-color-schemes-scheme2-base-textContrast: #ffffff;
+    --x-skeleton-color-schemes-scheme2-base-textSubdued: #0000008f;
+    --x-skeleton-color-schemes-scheme2-base-textSubdued200: #0000001a;
+
+      --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme1-base-background);
+      --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme1-base-accent);
+      --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued);
+      --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme1-base-border);
+      --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme1-base-text);
+      --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme1-base-textContrast);
+      --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme1-base-textSubdued);
+      --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200);
+
+      --x-skeleton-typography-line-small: 1.2;
+      --x-skeleton-typography-line-base: 1.5;
+      --x-skeleton-line-quantity-size: 2.1rem;
+
+      --x-skeleton-typography-size-small: 1.2rem;
+      --x-skeleton-typography-size-default: 1.4rem;
+      --x-skeleton-typography-size-medium: 1.5rem;
+      --x-skeleton-typography-size-large: 1.7rem;
+      --x-skeleton-typography-size-extra-extra-large: 2.4rem;
+
+      --x-skeleton-typography-primary-weight-bold: 400;
+      --x-skeleton-typography-primary-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+      --x-skeleton-typography-secondary-weight-bold: 600;
+      --x-skeleton-typography-secondary-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+      --x-skeleton-spacing-small-100: 1.1rem;
+      --x-skeleton-spacing-small-200: 0.9rem;
+      --x-skeleton-spacing-small-300: 0.7rem;
+      --x-skeleton-spacing-small-500: 0.3rem;
+      --x-skeleton-spacing-base: 1.4rem;
+      --x-skeleton-spacing-large-100: 1.7rem;
+      --x-skeleton-spacing-large-200: 2.1rem;
+      --x-skeleton-spacing-large-300: 2.6rem;
+      --x-skeleton-spacing-large-400: 3.2rem;
+      --x-skeleton-spacing-large-500: 3.8rem;
+
+      --x-skeleton-border-radius-none: 0;
+      --x-skeleton-border-radius-base: 5px;
+      --x-skeleton-border-radius-small: 2px;
+      --x-skeleton-border-radius-large: 10px;
+    }
+
+    
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      width: 100%;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      font-size: 62.5%;
+      font-family: var(--x-skeleton-typography-primary-fonts);
+      line-height: var(--x-skeleton-typography-line-base);
+    }
+
+    body {
+      -webkit-font-smoothing: subpixel-antialiased;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    /* TODO: need to take it out of the accessibility tree, too? */
+    body.Loading > .LoadingShell {
+      opacity: 1;
+    }
+  
+    
+    .BlockStack {
+      display: grid;
+    }
+
+    .BlockStack--spacing-small500 {
+      gap: var(--x-skeleton-spacing-small-500);
+    }
+    .BlockStack--spacing-small300 {
+      gap: var(--x-skeleton-spacing-small-300);
+    }
+    .BlockStack--spacing-small100 {
+      gap: var(--x-skeleton-spacing-small-100);
+    }
+    .BlockStack--spacing-base {
+      gap: var(--x-skeleton-spacing-base);
+    }
+    .BlockStack--spacing-large100 {
+      gap: var(--x-skeleton-spacing-large-100);
+    }
+    .BlockStack--spacing-large200 {
+      gap: var(--x-skeleton-spacing-large-200);
+    }
+    .BlockStack--min-inline-size-full {
+      flex: 1;
+    }
+    .BlockStack--inline-alignment-center {
+      justify-items: center;
+    }
+
+    .LoadingHeaderHeading {
+      margin: 0;
+      font-size: var(--x-skeleton-typography-size-extra-extra-large);
+      font-weight: var(--x-skeleton-typography-secondary-weight-bold);
+      font-family: var(--x-skeleton-typography-secondary-fonts);
+      line-height: var(--x-skeleton-typography-line-small);
+    }
+
+    .LoadingHeaderImage {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .CartIcon {
+      min-width: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+      min-height: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+      width: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+      height: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+      color: var(--x-skeleton-color-schemes-scheme1-base-accent, var(--x-skeleton--global-accent));
+    }
+
+    .CartIcon__svg {
+      display: block;
+      fill: none;
+      stroke: var(--x-skeleton-cart-color, currentColor);
+    }
+
+    .CartIcon__svg path, .CartIcon__svg circle {
+      stroke-width: 1.4px;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .InlineStack {
+      display: flex;
+      min-height: 100%;
+      min-width: 100%;
+    }
+    .InlineStack--spacing-base {
+      column-gap: var(--x-skeleton-spacing-base);
+    }
+
+    .InlineStack--spacing-small100 {
+      column-gap: var(--x-skeleton-spacing-small-100);
+    }
+
+    .InlineStack--spacing-large200 {
+      column-gap: var(--x-skeleton-spacing-large-200);
+    }
+    .InlineStack--inline-alignment-spaceBetween {
+      justify-content: space-between;
+    }
+    .InlineStack--block-alignment-start {
+      align-items: start;
+    }
+    .InlineStack--block-alignment-center {
+      align-items: center;
+    }
+
+    .Divider {
+      width: 100%;
+      height: 1px;
+      background-color: var(--x-skeleton-color-schemes-scheme1-base-border);
+    }
+
+    .SkeletonButton {
+      background-color: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200);
+      border-radius: var(--x-skeleton-border-radius-base);
+      animation: SkeletonPulse 4000ms ease infinite;
+      width: 100%;
+    }
+    .SkeletonButtonInner {
+      width: 100%;
+      height: 4.8rem;
+    }
+
+    .SkeletonImage {
+      background-color: var(--x-skeleton-default-color-textSubdued200);
+      animation: SkeletonPulse 4000ms ease infinite;
+      width: 100%;
+    }
+    .SkeletonImage--corner-radius-small {
+      border-radius: var(--x-skeleton-border-radius-small);
+    }
+    .SkeletonImage--corner-radius-base {
+      border-radius: var(--x-skeleton-border-radius-base);
+    }
+    .SkeletonImage--corner-radius-large {
+      border-radius: var(--x-skeleton-border-radius-large);
+    }
+
+    .SkeletonImageInner {
+      width: 100%;
+      height: 100%;
+    }
+
+    @supports (aspect-ratio: 1) {
+      .SkeletonImage {
+        aspect-ratio: 1;
+      }
+    }
+    @supports not (aspect-ratio: 1) {
+      .SkeletonImage::before {
+        content: "";
+        height: 0;
+        display: block;
+        padding-bottom: 100%;
+        padding-bottom: calc(100% / 1);
+      }
+    }
+
+    .SkeletonText {
+      background-color: var(--x-skeleton-default-color-textSubdued200);
+      border-radius: var(--x-skeleton-border-radius-base);
+      animation: SkeletonPulse 4000ms ease infinite;
+    }
+    .SkeletonTextInner {
+      display: inline-block;
+    }
+    .SkeletonTextInner--inline-size-small {
+      width: 10ch;
+    }
+    .SkeletonTextInner--inline-size-base {
+      width: 20ch;
+    }
+    .SkeletonTextInner--inline-size-large {
+      width: 30ch;
+    }
+    .SkeletonTextInner--inline-size-full {
+      width: 100%;
+    }
+
+    .Icon {
+      fill: none;
+      color: var(--x-skeleton-default-color-border);
+      stroke: currentColor;
+    }
+
+    .Icon path {
+      vector-effect: non-scaling-stroke;
+      stroke-width: 1.4px;
+    }
+
+    .LoadingShellLineItems {
+      display: grid;
+      grid-auto-flow: row;
+      align-items: stretch;
+      gap: var(--x-skeleton-spacing-base);
+    }
+
+    .LoadingShellLine {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: var(--x-skeleton-spacing-base);
+      align-items: center;
+      font-size: var(--x-type-size-base);
+    }
+
+    .LoadingShellLineImageWrapper {
+      width: 6.4rem;
+      height: 6.4rem;
+      position: relative;
+    }
+
+    .LoadingShellLineImage {
+      width: 6.4rem;
+      height: 6.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: contain;
+      background: var(--x-skeleton-default-color-backgroundSubdued);
+    }
+    .LoadingShellLineImage--border-full {
+      border: 1px solid var(--x-skeleton-default-color-border);
+    }
+    .LoadingShellLineImage--corner-radius-small {
+      border-radius: var(--x-skeleton-border-radius-small);
+    }
+    .LoadingShellLineImage--corner-radius-base {
+      border-radius: var(--x-skeleton-border-radius-base);
+    }
+    .LoadingShellLineImage--corner-radius-large {
+      border-radius: var(--x-skeleton-border-radius-large);
+    }
+
+    .LoadingShellLineImageIcon {
+      width: 3.3rem;
+      height: 3.3rem;
+    }
+
+    .LoadingShellLineQuantity {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(25%, -50%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.2rem;
+      min-height: 2.2rem;
+      padding: 0 var(--x-skeleton-spacing-small-300);
+      border-radius: 1.1rem;
+      background: var(--x-skeleton-default-color-textSubdued);
+      color: var(--x-skeleton-default-color-textContrast);
+      font-size: var(--x-skeleton-typography-size-small);
+      font-weight: 500;
+    }
+
+    .LoadingShellLineContent {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .LoadingShellLinePrice {
+      min-height: 6.4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .Text {
+      font-size: var(--x-skeleton-typography-size-default);
+    }
+    .Text--size-small {
+      font-size: var(--x-skeleton-typography-size-small);
+    }
+    .Text--size-large {
+      font-size: var(--x-skeleton-typography-size-large);
+    }
+    .Text--size-extraExtraLarge {
+      font-size: var(--x-skeleton-typography-size-extra-extra-large);
+    }
+    .Text--appearance-subdued {
+      color: var(--x-skeleton-default-color-textSubdued);
+    }
+
+    .SkeletonExpressCheckoutButtons {
+      display: grid;
+      gap: var(--x-skeleton-spacing-small-100);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .SkeletonExpressCheckoutButtons > *:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .SkeletonExpressCheckout {
+      margin-bottom: var(--x-skeleton-spacing-large-500);
+    }
+
+    .ExpressCheckoutDivider {
+      display: flex;
+      place-items: center;
+      height: 21px;
+      padding-top: calc(var(--x-skeleton-spacing-large-500) - 1px);
+    }
+
+    @media screen and (min-width: 1000px) {
+      .SkeletonExpressCheckoutButtons {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .SkeletonExpressCheckoutButtons > *:first-child {
+        grid-column: auto;
+      }
+    }
+
+    .LoadingShellHeader--banner {
+      background-position: 50% 50%;
+      background-size: cover;
+      background-image: var(--x-skeleton-banner-image);
+      --x-skeleton-header-shop-name-color: #fff;
+      --x-skeleton-cart-color: #fff;
+    }
+
+    .ColorScheme2 {
+      --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme2-base-background);
+      --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme2-base-accent);
+      --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme2-base-backgroundSubdued);
+      --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme2-base-border);
+      --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme2-base-text);
+      --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast);
+      --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme2-base-textSubdued);
+      --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme2-base-textSubdued200);
+
+      background-color: var(--x-skeleton-default-color-background);
+      color: var(--x-skeleton-default-color-text);
+    }
+
+    .VisuallyHidden {
+      border-width: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
+
+    .FadeIn {
+      opacity: 0;
+      animation: 400ms FadeIn 150ms forwards;
+    }
+
+    @keyframes FadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+
+    .LoadingShell {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100000;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      will-change: opacity;
+
+      min-height: 100dvh;
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      grid-template-areas:
+        'header'
+        'disclosure'
+        'shell-content';
+      background-color: var(--x-skeleton-default-color-background);
+      background-image: var(--x-skeleton-shell-background-image);
+
+      --x-skeleton-shell-inline-size: 57rem;
+      --x-skeleton-shell-background-image: var(--skeleton-config-shell-background-image);
+
+      --x-skeleton-shell-header-inline-size: var(--x-skeleton-shell-inline-size);
+      --x-skeleton-shell-header-padding: var(--x-skeleton-spacing-large-200);
+      --x-skeleton-shell-header-background-image: var(--skeleton-config-header-background-image);
+
+      --x-skeleton-shell-disclosure-inline-size: var(--x-skeleton-shell-inline-size);
+      --x-skeleton-shell-disclosure-padding: var(--x-skeleton-spacing-large-100) var(--x-skeleton-spacing-large-200);
+      --x-skeleton-shell-disclosure-display: block;
+
+      --x-skeleton-shell-main-inline-size: var(--x-skeleton-shell-inline-size);
+      --x-skeleton-shell-main-justify-content: center;
+      --x-skeleton-shell-main-padding: var(--x-skeleton-spacing-large-200);
+      --x-skeleton-shell-main-border: none;
+
+      --x-skeleton-shell-order-summary-display: none;
+      --x-skeleton-shell-order-summary-background-image: var(--skeleton-config-order-summary-background-image);
+
+      @media screen and (min-width: 1000px) {
+        --x-skeleton-shell-main-inline-size: 66rem;
+        --x-skeleton-shell-order-summary-inline-size: 52rem;
+        --x-skeleton-shell-section-columns-offset: 7rem;
+
+        --x-skeleton-shell-content-display: grid;
+        --x-skeleton-shell-content-template-areas: 'main order-summary';
+
+        --x-skeleton-shell-content-template-columns: minmax(
+            min-content, calc(50% + var(--x-skeleton-shell-section-columns-offset))
+          )
+          1fr;
+
+        --x-skeleton-shell-inline-size: 118rem;
+        --x-skeleton-shell-header-padding: 0;
+
+        --x-skeleton-shell-disclosure-display: none;
+
+        --x-skeleton-shell-main-justify-content: end;
+        --x-skeleton-shell-main-padding: var(--x-skeleton-spacing-large-500);
+        --x-skeleton-shell-main-border: 1px solid var(--x-skeleton-default-color-border);
+
+        --x-skeleton-shell-order-summary-display: block;
+        --x-skeleton-shell-order-summary-padding: var(--x-skeleton-spacing-large-500);
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+      .LoadingShell.LoadingShellConfig-Header-positionStart {
+        --x-skeleton-shell-header-padding: calc(var(--x-skeleton-spacing-large-500) * 2)
+          var(--x-skeleton-spacing-large-500) var(--x-skeleton-spacing-large-500);
+      }
+
+      .LoadingShell.LoadingShellConfig-Header-positionStart.LoadingShell-variantOneStepCheckout {
+        --x-skeleton-shell-header-padding: var(--x-skeleton-spacing-large-200) var(--x-skeleton-spacing-large-500);
+      }
+    }
+
+    .LoadingShellHeader {
+      grid-area: header;
+      background-color: var(--x-skeleton-default-color-background);
+      color: var(--x-skeleton-default-color-text);
+    }
+
+    .LoadingShellHeader-colorSchemeInherit {
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .LoadingShellHeaderContent {
+      padding: var(--x-skeleton-shell-header-padding);
+      width: 100%;
+      max-width: var(--x-skeleton-shell-header-inline-size);
+    }
+
+    @media screen and (min-width: 1000px) {
+      .LoadingShell:not(.LoadingShellConfig-Header-positionStart) .LoadingShellHeader-positionStart {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 999px) {
+      .LoadingShellConfig-Header-positionInline .LoadingShellHeader-positionInline,
+      .LoadingShellConfig-Header-positionInlineSecondary .LoadingShellHeader-positionInlineSecondary {
+        display: none;
+      }
+
+      .LoadingShellConfig-Header-positionInlineSecondary .LoadingShellHeader-positionStart {
+        background-image: var(
+          --x-skeleton-shell-header-background-image,
+          var(--x-skeleton-shell-order-summary-background-image)
+        );
+      }
+    }
+
+    .LoadingShellHeader-positionStart {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid var(--x-skeleton-default-color-border);
+      background-image: var(--x-skeleton-shell-header-background-image);
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .LoadingShellHeader-positionStart.LoadingShellHeader-hasBackgroundImage {
+      --header-shop-name-color: #ffffff;
+    }
+
+    .LoadingShellBuyerJourneyContent {
+      width: 100%;
+      width: var(--x-skeleton-shell-buyer-journey-inline-size);
+      padding: var(--x-skeleton-shell-buyer-journey-padding);
+    }
+
+    .LoadingShellDisclosure {
+      grid-area: disclosure;
+      background-color: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued);
+      display: var(--x-skeleton-shell-disclosure-display);
+      border-bottom: 1px solid var(--x-skeleton-default-color-border);
+    }
+
+    .LoadingShellDisclosureButton {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .LoadingShellDisclosureButton {
+      text-align: start;
+      background: var(--x-skeleton-default-color-background-subdued);
+      color: var(--x-skeleton-default-color-accent);
+      position: relative;
+      z-index: 2;
+    }
+
+    .LoadingShellConfig-Shell-hasBackgroundImage .LoadingShellDisclosureButton {
+      background: transparent;
+      color: inherit;
+    }
+
+    .LoadingShellDisclosureButtonContent {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: var(--x-skeleton-spacing-small-200);
+      align-content: center;
+      align-items: center;
+    }
+
+    .LoadingShellDisclosureButtonContent {
+      padding: var(--x-skeleton-shell-disclosure-padding);
+      width: 100%;
+      max-width: var(--x-skeleton-shell-disclosure-inline-size);
+    }
+
+    .LoadingShellContent {
+      grid-area: shell-content;
+      display: var(--x-skeleton-shell-content-display);
+      grid-template-areas: var(--x-skeleton-shell-content-template-areas);
+      grid-template-columns: var(--x-skeleton-shell-content-template-columns);
+    }
+
+    .LoadingShellMain {
+      background-color: var(--x-skeleton-default-color-background);
+      color: var(--x-skeleton-default-color-text);
+      grid-area: main;
+      display: flex;
+      justify-content: var(--x-skeleton-shell-main-justify-content);
+      height: 100%;
+    }
+
+    .LoadingShellMain .LoadingShellMainContent {
+      height: 100%;
+      width: 100%;
+      max-width: var(--x-skeleton-shell-main-inline-size);
+      padding: var(--x-skeleton-shell-main-padding);
+      border-right: var(--x-skeleton-shell-main-border);
+
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'header'
+        'buyer-journey'
+        'main-content-primary';
+    }
+
+    .LoadingShellMainContentPrimary {
+      grid-area: main-content-primary;
+    }
+
+    .LoadingShellMain-colorSchemeInherit {
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .LoadingShellMainContent .LoadingShellHeader {
+      margin-bottom: var(--x-skeleton-spacing-large-100);
+    }
+    .LoadingShellMainContent .LoadingShellBuyerJourney {
+      margin-bottom: var(--x-skeleton-spacing-large-300);
+    }
+
+    .LoadingShell-variantOneStepCheckout .LoadingShellMainContent .LoadingShellHeader {
+      margin-bottom: calc(var(--x-skeleton-spacing-large-300) * 2);
+    }
+
+    .LoadingShellOrderSummary {
+      background-color: var(--x-skeleton-default-color-background);
+      color: var(--x-skeleton-default-color-text);
+      display: var(--x-skeleton-shell-order-summary-display);
+      grid-area: order-summary;
+    }
+
+    .LoadingShellOrderSummary .LoadingShellOrderSummaryContent {
+      position: sticky;
+      padding: var(--x-skeleton-shell-order-summary-padding);
+      width: 100%;
+      max-width: var(--x-skeleton-shell-order-summary-inline-size);
+      top: 0;
+      right: auto;
+      bottom: 0;
+      left: auto;
+    }
+
+    .LoadingShellOrderSummary-colorSchemeInherit {
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .LoadingShellOrderSummaryContent .LoadingShellHeader {
+      margin-bottom: var(--x-skeleton-spacing-large-500);
+    }
+
+    /* ThreeStep Header */
+    .LoadingShell-variantThreeStepCheckout .LoadingHeader {
+      justify-items: start;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .LoadingShell-variantThreeStepCheckout .LoadingHeader-alignmentCenter {
+      justify-items: center;
+      justify-content: center;
+    }
+    .LoadingShell-variantThreeStepCheckout .LoadingHeader-alignmentEnd {
+      justify-items: end;
+      justify-content: flex-end;
+    }
+
+    /* OneStep Header */
+    .LoadingShell-variantOneStepCheckout .LoadingHeader {
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-rows: minmax(0, 1fr);
+      grid-auto-rows: minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(auto, max-content);
+      grid-auto-columns: 1fr;
+      column-gap: var(--x-skeleton-spacing-large-500);
+      row-gap: var(--x-skeleton-spacing-large-500);
+      align-items: center;
+      align-content: center;
+    }
+
+    .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentCenter {
+      grid-template-columns: minmax(auto, max-content) minmax(0, 1fr) minmax(auto, max-content);
+    }
+
+    .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentCenter .CartIcon:last-child {
+      visibility: hidden;
+    }
+    .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentEnd {
+      grid-template-columns: minmax(auto, max-content) minmax(0, 1fr);
+    }
+
+    .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentCenter .LoadingHeaderHeading {
+      display: flex;
+      justify-content: center;
+    }
+    .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentEnd .LoadingHeaderHeading {
+      display: flex;
+      justify-content: end;
+    }
+  </style><div class="LoadingShell LoadingShellConfig-Header-positionStart LoadingShell-variantOneStepCheckout"><header role="banner" class="LoadingShellHeader LoadingShellHeader-containerFill LoadingShellHeader-positionStart"><div class="LoadingShellHeaderContent"><div class="LoadingHeader"><h1 class="LoadingHeaderHeading"><img alt="Tasty Nibbles" src="https://cdn.shopify.com/s/files/1/0559/2586/6671/files/Brand_logo_Tasty_nibbles-01_575ef6d1-1653-4b3c-b8fe-e3fb05f76ed1_x320.png?v=1652345831" height="80.16877637130801" width="95" class="LoadingHeaderImage"/></h1><div class="CartIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class="CartIcon__svg"><path d="M2.675 10.037 3.072 4.2h7.856l.397 5.837A2.4 2.4 0 0 1 8.931 12.6H5.069a2.4 2.4 0 0 1-2.394-2.563Z"></path><path d="M4.9 3.5a2.1 2.1 0 1 1 4.2 0v1.4a2.1 2.1 0 0 1-4.2 0V3.5Z"></path></svg></div></div></div></header><div class="LoadingShellDisclosure"><div class="LoadingShellDisclosureButton LoadingShellDisclosureButton-containerFill"><span class="LoadingShellDisclosureButtonContent FadeIn"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-base"><span></span></span></span></span><span><span class="Text Text--size-large"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></span></span></div></div><div class="LoadingShellContent LoadingShellContent-containerFill"><div class="LoadingShellMain"><div class="LoadingShellMainContent"><main class="LoadingShellMainContentPrimary FadeIn"><div class="SkeletonExpressCheckout"><div class="BlockStack BlockStack--spacing-base"><div class="BlockStack BlockStack--inline-alignment-center BlockStack--spacing-base"><span class="Text"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-base"><span></span></span></span></span></div><div class="SkeletonExpressCheckoutButtons"><div class="SkeletonButton"><div class="SkeletonButtonInner"></div></div><div class="SkeletonButton"><div class="SkeletonButtonInner"></div></div><div class="SkeletonButton"><div class="SkeletonButtonInner"></div></div></div></div><div class="ExpressCheckoutDivider"><div class="Divider"></div></div></div><div class="BlockStack BlockStack--spacing-large200"><div class="BlockStack BlockStack--spacing-base"><span class="Text Text--size-large"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><div class="BlockStack BlockStack--spacing-small300"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span></div></div><div class="Divider"></div><div class="BlockStack BlockStack--spacing-base"><span class="Text Text--size-large"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><div class="BlockStack BlockStack--spacing-small300"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span></div></div></div></main></div></div><div class="LoadingShellOrderSummary ColorScheme2"><div class="LoadingShellOrderSummaryContent"><aside class="LoadingShellOrderSummaryContentPrimary FadeIn"><div class="BlockStack BlockStack--spacing-large200"><h2 class="VisuallyHidden"></h2><div class="LoadingShellLineItems"><div aria-hidden="true" class="LoadingShellLine"><div class="LoadingShellLineImageWrapper"><img src="https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49.jpg?v=1671702467" alt="Tender+Coconut+Water+200ml+(Pack+of+6)" class="LoadingShellLineImage LoadingShellLineImage--corner-radius-base LoadingShellLineImage--border-full"/><span aria-hidden="true" class="LoadingShellLineQuantity">1</span></div><div class="LoadingShellLineContent"><span class="Text">Tender Coconut Water 200ml (Pack of 6)</span></div><div class="VisuallyHidden">1<span aria-hidden="true"> x</span></div><div class="LoadingShellLinePrice"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></div></div></div><div class="BlockStack BlockStack--spacing-small100"><div class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></div><div class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></div><div class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween"><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span class="Text Text--size-small"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></div><div class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween"><span class="Text Text--size-large"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span class="Text Text--size-large"><span class="SkeletonText"><span class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></div></div></div></aside></div></div></div></div><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.en.da42550059190bee04f4.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/922.latest.en.0a02952f03be201cff6a.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/807.latest.en.f5b76add4556abacb226.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/681.latest.en.76291e02a8e10078afd8.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.6981947a2f765cd0968b.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/751.latest.en.08105131cffb5e5f123d.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/21.latest.en.34d1a592e4e4e80d1dc1.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/100.latest.en.ce6eac4958bd25e9d6a6.js" defer crossorigin></script><script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.latest.en.83680daab1bf3a2424ab.js" defer crossorigin></script><link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/922.latest.en.7f073fcd0399772883a4.css" crossorigin/><link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.5e52d9ec000e6dcd2cd6.css" crossorigin/><link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/21.latest.en.978411357b08e15f2a5e.css" crossorigin/><link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/268.latest.en.6520a112d0e27cf11401.css" crossorigin/><script>document.cookie = 'queue_token=' + "Aj2cbFbAW5ah-JdoJrslA3Np32HA7przrlrpTqQY6A7vlObwfyBSPmzApWCdMGQx3O7y6AIqbpjnCU2rb--ffWwposgAw15ChOZ4EUVhvb82yy76Va9kx2SeMUtcjZfyW8FPRORt51Vcps9ZipPRK7pwQmkLyCriCzr0v5n3BQULBqyRL2Pr9tUt" + '; path=/; max-age=3300';</script><meta name="serialized-session-token" content="&quot;MkZ5Z2U4a1YveG0vUnROdlJlTU1BOEQ1Wk5wb3BMUENvRG92bHlOczRkYTRpdW5nNG5KMHEvS2lhYXdxUHpvSDYxcHJmOHBxa3dNNFJLeXEwcDY4MVl0UEpxQ3VUTENkWEZ6cFc2RlBrSGVwdkd2ZTFxN0djSlRuWmsyajR0Uzk4RThrcWpoZmM1ZWVHd0tpZHFzRld6ZnZlWUI3ajZWV0taUWJKTWRRMVNxUlRqZzd0NW5ENW9UQnlCQWNIT2FpUXBRSDdzZGxuejAzWTJJRG1PdE1lSzAyQjdZVHZXMWMyWTFVMEljNDBDcWprTUZLUGlQZTU2QjEyQWFXaXVqNnBSajFLTjFUNFYyZCtpWURWUS9mbGVEYVJXTXZLdjI4YnNGMDRRPT0tLXBHbzNoYkZvR0NMazdwTmQtLU5FL04rTDFkUS9FdzBPRVRNZWQzZEE9PQ&quot;"/><meta name="serialized-source-token" content="&quot;Z2NwLXVzLWNlbnRyYWwxOjAxSFFBNkhBUERTVDZHUTBKQ1hBRkdUVlhR&quot;"/><meta name="serialized-checkout-session-identifier" content="&quot;4fef18d8f2df974bae8ffea75ccd446d&quot;"/><meta name="serialized-graphql" content="{&quot;5638616fb05cb50fa18d4cba4335a74898a1bfebfdc79a784e07dacd23898e17{}&quot;:{&quot;shop&quot;:{&quot;id&quot;:&quot;gid://shopify/Shop/55925866671&quot;,&quot;shippingCountries&quot;:[{&quot;value&quot;:&quot;IN&quot;,&quot;label&quot;:&quot;India&quot;,&quot;__typename&quot;:&quot;Country&quot;}],&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;}},&quot;acdc925cdd12958fe1a95c73a3bc83a3612bc9e182fe99a1eae1138a09830784{}&quot;:{&quot;shop&quot;:{&quot;hostedFieldsUrl&quot;:&quot;https://checkout.shopifycs.com/dist/card_fields.js&quot;,&quot;domain&quot;:&quot;www.tastynibbles.in&quot;,&quot;name&quot;:&quot;Tasty Nibbles&quot;,&quot;id&quot;:&quot;gid://shopify/Shop/55925866671&quot;,&quot;merchantPolicies&quot;:[{&quot;handle&quot;:&quot;refund-policy&quot;,&quot;url&quot;:&quot;https://www.tastynibbles.in/55925866671/policies/refund-policy.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;shipping-policy&quot;,&quot;url&quot;:&quot;https://www.tastynibbles.in/55925866671/policies/shipping-policy.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;privacy-policy&quot;,&quot;url&quot;:&quot;https://www.tastynibbles.in/55925866671/policies/privacy-policy.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;terms-of-service&quot;,&quot;url&quot;:&quot;https://www.tastynibbles.in/55925866671/policies/terms-of-service.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;}],&quot;country&quot;:{&quot;code&quot;:&quot;IN&quot;,&quot;name&quot;:&quot;India&quot;,&quot;localizationKeys&quot;:{&quot;address2&quot;:null,&quot;postalCode&quot;:&quot;pincode_label&quot;,&quot;zone&quot;:&quot;state_label&quot;,&quot;__typename&quot;:&quot;AddressLocalizationKeys&quot;},&quot;labels&quot;:{&quot;firstName&quot;:&quot;First name&quot;,&quot;lastName&quot;:&quot;Last name&quot;,&quot;company&quot;:&quot;Company&quot;,&quot;address1&quot;:&quot;Address&quot;,&quot;address2&quot;:&quot;Apartment, suite, etc.&quot;,&quot;city&quot;:&quot;City&quot;,&quot;country&quot;:&quot;Country/region&quot;,&quot;zone&quot;:&quot;State&quot;,&quot;postalCode&quot;:&quot;PIN code&quot;,&quot;phone&quot;:&quot;Phone&quot;,&quot;__typename&quot;:&quot;AddressLabels&quot;},&quot;zones&quot;:[{&quot;code&quot;:&quot;AN&quot;,&quot;name&quot;:&quot;Andaman and Nicobar Islands&quot;,&quot;nameWithAlternates&quot;:[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AP&quot;,&quot;name&quot;:&quot;Andhra Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Andhra Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AR&quot;,&quot;name&quot;:&quot;Arunachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Arunachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AS&quot;,&quot;name&quot;:&quot;Assam&quot;,&quot;nameWithAlternates&quot;:[&quot;Assam&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;BR&quot;,&quot;name&quot;:&quot;Bihar&quot;,&quot;nameWithAlternates&quot;:[&quot;Bihar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CH&quot;,&quot;name&quot;:&quot;Chandigarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chandigarh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CG&quot;,&quot;name&quot;:&quot;Chhattisgarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DN&quot;,&quot;name&quot;:&quot;Dadra and Nagar Haveli&quot;,&quot;nameWithAlternates&quot;:[&quot;Dadra and Nagar Haveli&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DD&quot;,&quot;name&quot;:&quot;Daman and Diu&quot;,&quot;nameWithAlternates&quot;:[&quot;Daman and Diu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DL&quot;,&quot;name&quot;:&quot;Delhi&quot;,&quot;nameWithAlternates&quot;:[&quot;Delhi&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GA&quot;,&quot;name&quot;:&quot;Goa&quot;,&quot;nameWithAlternates&quot;:[&quot;Goa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GJ&quot;,&quot;name&quot;:&quot;Gujarat&quot;,&quot;nameWithAlternates&quot;:[&quot;Gujarat&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HR&quot;,&quot;name&quot;:&quot;Haryana&quot;,&quot;nameWithAlternates&quot;:[&quot;Haryana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HP&quot;,&quot;name&quot;:&quot;Himachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Himachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JK&quot;,&quot;name&quot;:&quot;Jammu and Kashmir&quot;,&quot;nameWithAlternates&quot;:[&quot;Jammu and Kashmir&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JH&quot;,&quot;name&quot;:&quot;Jharkhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Jharkhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KA&quot;,&quot;name&quot;:&quot;Karnataka&quot;,&quot;nameWithAlternates&quot;:[&quot;Karnataka&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KL&quot;,&quot;name&quot;:&quot;Kerala&quot;,&quot;nameWithAlternates&quot;:[&quot;Kerala&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LA&quot;,&quot;name&quot;:&quot;Ladakh&quot;,&quot;nameWithAlternates&quot;:[&quot;Ladakh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LD&quot;,&quot;name&quot;:&quot;Lakshadweep&quot;,&quot;nameWithAlternates&quot;:[&quot;Lakshadweep&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MP&quot;,&quot;name&quot;:&quot;Madhya Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Madhya Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MH&quot;,&quot;name&quot;:&quot;Maharashtra&quot;,&quot;nameWithAlternates&quot;:[&quot;Maharashtra&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MN&quot;,&quot;name&quot;:&quot;Manipur&quot;,&quot;nameWithAlternates&quot;:[&quot;Manipur&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;ML&quot;,&quot;name&quot;:&quot;Meghalaya&quot;,&quot;nameWithAlternates&quot;:[&quot;Meghalaya&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MZ&quot;,&quot;name&quot;:&quot;Mizoram&quot;,&quot;nameWithAlternates&quot;:[&quot;Mizoram&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;NL&quot;,&quot;name&quot;:&quot;Nagaland&quot;,&quot;nameWithAlternates&quot;:[&quot;Nagaland&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;OR&quot;,&quot;name&quot;:&quot;Odisha&quot;,&quot;nameWithAlternates&quot;:[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PY&quot;,&quot;name&quot;:&quot;Puducherry&quot;,&quot;nameWithAlternates&quot;:[&quot;Puducherry&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PB&quot;,&quot;name&quot;:&quot;Punjab&quot;,&quot;nameWithAlternates&quot;:[&quot;Punjab&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;RJ&quot;,&quot;name&quot;:&quot;Rajasthan&quot;,&quot;nameWithAlternates&quot;:[&quot;Rajasthan&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;SK&quot;,&quot;name&quot;:&quot;Sikkim&quot;,&quot;nameWithAlternates&quot;:[&quot;Sikkim&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TN&quot;,&quot;name&quot;:&quot;Tamil Nadu&quot;,&quot;nameWithAlternates&quot;:[&quot;Tamil Nadu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TS&quot;,&quot;name&quot;:&quot;Telangana&quot;,&quot;nameWithAlternates&quot;:[&quot;Telangana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TR&quot;,&quot;name&quot;:&quot;Tripura&quot;,&quot;nameWithAlternates&quot;:[&quot;Tripura&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UP&quot;,&quot;name&quot;:&quot;Uttar Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttar Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UK&quot;,&quot;name&quot;:&quot;Uttarakhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttarakhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;WB&quot;,&quot;name&quot;:&quot;West Bengal&quot;,&quot;nameWithAlternates&quot;:[&quot;West Bengal&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;}],&quot;formatting&quot;:{&quot;edit&quot;:&quot;{country}_{firstName}{lastName}_{company}_{address1}_{address2}_{city}{province}{zip}_{phone}&quot;,&quot;show&quot;:&quot;{firstName} {lastName}_{company}_{address1}_{address2}_{zip} {city} {province}_{country}_{phone}&quot;,&quot;__typename&quot;:&quot;AddressFormat&quot;},&quot;autocompletionField&quot;:&quot;ADDRESS1&quot;,&quot;buildingNumberRequired&quot;:false,&quot;buildingNumberMayBeInAddress2&quot;:false,&quot;pureNumericPostalCode&quot;:true,&quot;postalCodeRequired&quot;:true,&quot;__typename&quot;:&quot;Country&quot;},&quot;popularBillingCountries&quot;:[{&quot;value&quot;:&quot;IN&quot;,&quot;label&quot;:&quot;India&quot;,&quot;__typename&quot;:&quot;Country&quot;},{&quot;value&quot;:&quot;US&quot;,&quot;label&quot;:&quot;United States&quot;,&quot;__typename&quot;:&quot;Country&quot;},{&quot;value&quot;:&quot;QA&quot;,&quot;label&quot;:&quot;Qatar&quot;,&quot;__typename&quot;:&quot;Country&quot;},{&quot;value&quot;:&quot;NO&quot;,&quot;label&quot;:&quot;Norway&quot;,&quot;__typename&quot;:&quot;Country&quot;}],&quot;popularShippingCountries&quot;:[],&quot;storefront&quot;:{&quot;url&quot;:&quot;https://www.tastynibbles.in&quot;,&quot;hasStorefront&quot;:true,&quot;__typename&quot;:&quot;CheckoutStorefrontConfig&quot;},&quot;theme&quot;:{&quot;id&quot;:&quot;130040463535&quot;,&quot;cityhash&quot;:&quot;10455128972921498656&quot;,&quot;__typename&quot;:&quot;ThemeConfig&quot;},&quot;trackingPixels&quot;:[{&quot;pixelId&quot;:&quot;511162776752735&quot;,&quot;pixelType&quot;:&quot;FACEBOOK&quot;,&quot;pixelConfig&quot;:null,&quot;__typename&quot;:&quot;TrackingPixel&quot;},{&quot;pixelId&quot;:&quot;G-WCN3C8KG6R&quot;,&quot;pixelType&quot;:&quot;GOOGLE_TAG_MANAGER&quot;,&quot;pixelConfig&quot;:{&quot;target_country&quot;:&quot;IN&quot;,&quot;gtag_events&quot;:[{&quot;type&quot;:&quot;search&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/rKUtCN6DyPoCELWQ1bQB&quot;]},{&quot;type&quot;:&quot;begin_checkout&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/7TleCNuDyPoCELWQ1bQB&quot;]},{&quot;type&quot;:&quot;view_item&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/hk9rCNWDyPoCELWQ1bQB&quot;,&quot;MC-Y41CDBPZ5C&quot;]},{&quot;type&quot;:&quot;purchase&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/6CKiCNKDyPoCELWQ1bQB&quot;,&quot;MC-Y41CDBPZ5C&quot;]},{&quot;type&quot;:&quot;page_view&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/y2AaCM-DyPoCELWQ1bQB&quot;,&quot;MC-Y41CDBPZ5C&quot;]},{&quot;type&quot;:&quot;add_payment_info&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/pooQCOGDyPoCELWQ1bQB&quot;]},{&quot;type&quot;:&quot;add_to_cart&quot;,&quot;action_label&quot;:[&quot;G-WCN3C8KG6R&quot;,&quot;AW-378882101/nYbCCNiDyPoCELWQ1bQB&quot;]}]},&quot;__typename&quot;:&quot;TrackingPixel&quot;}],&quot;onlineStoreChat&quot;:null,&quot;facebookAppPixelId&quot;:&quot;511162776752735&quot;,&quot;facebookCapiEnabled&quot;:true,&quot;myshopifyDomain&quot;:&quot;tastynibbles.myshopify.com&quot;,&quot;translations&quot;:&quot;{}&quot;,&quot;analyticsAccount&quot;:&quot;UA-194828003-1&quot;,&quot;enhancedEcommerceEnabled&quot;:true,&quot;customerAccountRequirement&quot;:&quot;OPTIONAL&quot;,&quot;emailMarketing&quot;:&quot;CHECKED&quot;,&quot;smsMarketing&quot;:&quot;OFF&quot;,&quot;shippingRatesReloadStrategy&quot;:{&quot;IN&quot;:3},&quot;billingAddressFormSettings&quot;:{&quot;address2&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;company&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;firstName&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;phone&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;addressAutocompletion&quot;:true,&quot;__typename&quot;:&quot;BillingAddressFormSettings&quot;},&quot;shopConfigurations&quot;:{&quot;defaultConfiguration&quot;:{&quot;contactInfoOptions&quot;:[&quot;EMAIL&quot;,&quot;PHONE&quot;],&quot;addressFormSettings&quot;:{&quot;address2&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;company&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;firstName&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;phone&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;addressAutocompletion&quot;:true,&quot;addressValidation&quot;:true,&quot;__typename&quot;:&quot;AddressFormSettings&quot;},&quot;__typename&quot;:&quot;CountryConfiguration&quot;},&quot;countrySpecificConfigurations&quot;:[{&quot;countries&quot;:[&quot;IN&quot;],&quot;configuration&quot;:{&quot;contactInfoOptions&quot;:[&quot;EMAIL&quot;,&quot;PHONE&quot;],&quot;addressFormSettings&quot;:{&quot;address2&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;company&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;firstName&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;phone&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;addressAutocompletion&quot;:true,&quot;__typename&quot;:&quot;AddressFormSettings&quot;},&quot;__typename&quot;:&quot;CountryConfiguration&quot;},&quot;__typename&quot;:&quot;CountrySpecificConfiguration&quot;}],&quot;__typename&quot;:&quot;ShopConfigurations&quot;},&quot;currencyCode&quot;:&quot;INR&quot;,&quot;timeZone&quot;:&quot;Asia/Calcutta&quot;,&quot;b2bEnabled&quot;:false,&quot;enabledFlags&quot;:[&quot;03161c54&quot;,&quot;63f2af56&quot;,&quot;60a1a494&quot;,&quot;eabd8dc4&quot;,&quot;1cf4974e&quot;,&quot;3e4fd7f7&quot;,&quot;c6cae8f7&quot;],&quot;enabledDeliveryMethods&quot;:[&quot;SHIPPING&quot;,&quot;LOCAL&quot;],&quot;giftCardsEnabled&quot;:false,&quot;discountCodesEnabled&quot;:true,&quot;contactEmail&quot;:&quot;customercare@tastynibbles.in&quot;,&quot;acceptTipPayments&quot;:false,&quot;showTipPayments&quot;:true,&quot;postPurchaseExtensionAvailable&quot;:false,&quot;postPurchaseDevelopmentModeAvailable&quot;:false,&quot;postPurchaseAdditionalTrackingScript&quot;:null,&quot;confirmationPageEnabled&quot;:false,&quot;additionalTrackingScript&quot;:null,&quot;hasAdditionalGoogleAnalyticsScript&quot;:true,&quot;customerAccountLocationsUrl&quot;:&quot;https://shopify.com/55925866671/account/locations&quot;,&quot;loginLinkVisible&quot;:true,&quot;customerSettingsEnabled&quot;:true,&quot;shopPayEnabled&quot;:false,&quot;storeVaultEnabled&quot;:false,&quot;storeVaultCvvVerificationAtGuestCheckoutEnabled&quot;:false,&quot;webPixelConfigurations&quot;:[{&quot;idTmp&quot;:&quot;21037231&quot;,&quot;configuration&quot;:&quot;{\&quot;accountID\&quot;:\&quot;1171\&quot;}&quot;,&quot;eventPayloadVersion&quot;:&quot;v1&quot;,&quot;runtimeContext&quot;:&quot;STRICT&quot;,&quot;scriptVersion&quot;:&quot;39cbab14f2562be67855f852ca0e0f67&quot;,&quot;type&quot;:&quot;APP&quot;,&quot;apiClientId&quot;:&quot;5043673&quot;,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;},{&quot;idTmp&quot;:&quot;shopify-app-pixel&quot;,&quot;configuration&quot;:&quot;{}&quot;,&quot;eventPayloadVersion&quot;:&quot;v1&quot;,&quot;runtimeContext&quot;:&quot;STRICT&quot;,&quot;scriptVersion&quot;:&quot;0574&quot;,&quot;type&quot;:&quot;APP&quot;,&quot;apiClientId&quot;:&quot;shopify-pixel&quot;,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;},{&quot;idTmp&quot;:&quot;shopify-custom-pixel&quot;,&quot;configuration&quot;:null,&quot;eventPayloadVersion&quot;:&quot;v1&quot;,&quot;runtimeContext&quot;:&quot;LAX&quot;,&quot;scriptVersion&quot;:&quot;0574&quot;,&quot;type&quot;:&quot;CUSTOM&quot;,&quot;apiClientId&quot;:&quot;shopify-pixel&quot;,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;}],&quot;webPixelManagerVersion&quot;:&quot;3698dd31wbfa453bap448c3218md5149de6&quot;,&quot;linkToArriveApp&quot;:false,&quot;sameBillingAndShippingAddress&quot;:true,&quot;requireMatchingShippingAndBilling&quot;:false,&quot;prefetchShippingRatesEnabled&quot;:true,&quot;captureAtFulfillmentEnabled&quot;:false,&quot;developmentShop&quot;:false,&quot;customerAccountDomain&quot;:&quot;shopify.com&quot;,&quot;checkoutPublicAccessToken&quot;:&quot;ZjY0YjA2MWVjYzU2NmE3OGUyZjZhNDAyNGQyYjc4NmE6\n&quot;,&quot;asyncDeliveryPromiseExperienceEnabled&quot;:false,&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;},&quot;checkoutProfile&quot;:null,&quot;globalCheckoutUiExtensions&quot;:[],&quot;cardsinkUrl&quot;:&quot;https://deposit.us.shopifycs.com/sessions&quot;},&quot;d7cbb2e251147912fcb3a54465ba574d531e661429e5016b8f6827d9ffd45ed0{}&quot;:{&quot;shop&quot;:{&quot;defaultShippingDetails&quot;:{&quot;country&quot;:{&quot;code&quot;:&quot;IN&quot;,&quot;__typename&quot;:&quot;Country&quot;},&quot;zone&quot;:{&quot;code&quot;:&quot;KA&quot;,&quot;__typename&quot;:&quot;AddressZone&quot;},&quot;__typename&quot;:&quot;DefaultShippingDetails&quot;},&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;},&quot;httpRequestInfo&quot;:{&quot;locale&quot;:&quot;en-IN&quot;,&quot;localeDirection&quot;:&quot;ltr&quot;,&quot;geolocation&quot;:{&quot;country&quot;:{&quot;code&quot;:&quot;IN&quot;,&quot;name&quot;:&quot;India&quot;,&quot;localizationKeys&quot;:{&quot;address2&quot;:null,&quot;postalCode&quot;:&quot;pincode_label&quot;,&quot;zone&quot;:&quot;state_label&quot;,&quot;__typename&quot;:&quot;AddressLocalizationKeys&quot;},&quot;labels&quot;:{&quot;firstName&quot;:&quot;First name&quot;,&quot;lastName&quot;:&quot;Last name&quot;,&quot;company&quot;:&quot;Company&quot;,&quot;address1&quot;:&quot;Address&quot;,&quot;address2&quot;:&quot;Apartment, suite, etc.&quot;,&quot;city&quot;:&quot;City&quot;,&quot;country&quot;:&quot;Country/region&quot;,&quot;zone&quot;:&quot;State&quot;,&quot;postalCode&quot;:&quot;PIN code&quot;,&quot;phone&quot;:&quot;Phone&quot;,&quot;__typename&quot;:&quot;AddressLabels&quot;},&quot;zones&quot;:[{&quot;code&quot;:&quot;AN&quot;,&quot;name&quot;:&quot;Andaman and Nicobar Islands&quot;,&quot;nameWithAlternates&quot;:[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AP&quot;,&quot;name&quot;:&quot;Andhra Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Andhra Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AR&quot;,&quot;name&quot;:&quot;Arunachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Arunachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AS&quot;,&quot;name&quot;:&quot;Assam&quot;,&quot;nameWithAlternates&quot;:[&quot;Assam&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;BR&quot;,&quot;name&quot;:&quot;Bihar&quot;,&quot;nameWithAlternates&quot;:[&quot;Bihar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CH&quot;,&quot;name&quot;:&quot;Chandigarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chandigarh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CG&quot;,&quot;name&quot;:&quot;Chhattisgarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DN&quot;,&quot;name&quot;:&quot;Dadra and Nagar Haveli&quot;,&quot;nameWithAlternates&quot;:[&quot;Dadra and Nagar Haveli&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DD&quot;,&quot;name&quot;:&quot;Daman and Diu&quot;,&quot;nameWithAlternates&quot;:[&quot;Daman and Diu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DL&quot;,&quot;name&quot;:&quot;Delhi&quot;,&quot;nameWithAlternates&quot;:[&quot;Delhi&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GA&quot;,&quot;name&quot;:&quot;Goa&quot;,&quot;nameWithAlternates&quot;:[&quot;Goa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GJ&quot;,&quot;name&quot;:&quot;Gujarat&quot;,&quot;nameWithAlternates&quot;:[&quot;Gujarat&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HR&quot;,&quot;name&quot;:&quot;Haryana&quot;,&quot;nameWithAlternates&quot;:[&quot;Haryana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HP&quot;,&quot;name&quot;:&quot;Himachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Himachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JK&quot;,&quot;name&quot;:&quot;Jammu and Kashmir&quot;,&quot;nameWithAlternates&quot;:[&quot;Jammu and Kashmir&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JH&quot;,&quot;name&quot;:&quot;Jharkhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Jharkhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KA&quot;,&quot;name&quot;:&quot;Karnataka&quot;,&quot;nameWithAlternates&quot;:[&quot;Karnataka&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KL&quot;,&quot;name&quot;:&quot;Kerala&quot;,&quot;nameWithAlternates&quot;:[&quot;Kerala&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LA&quot;,&quot;name&quot;:&quot;Ladakh&quot;,&quot;nameWithAlternates&quot;:[&quot;Ladakh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LD&quot;,&quot;name&quot;:&quot;Lakshadweep&quot;,&quot;nameWithAlternates&quot;:[&quot;Lakshadweep&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MP&quot;,&quot;name&quot;:&quot;Madhya Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Madhya Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MH&quot;,&quot;name&quot;:&quot;Maharashtra&quot;,&quot;nameWithAlternates&quot;:[&quot;Maharashtra&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MN&quot;,&quot;name&quot;:&quot;Manipur&quot;,&quot;nameWithAlternates&quot;:[&quot;Manipur&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;ML&quot;,&quot;name&quot;:&quot;Meghalaya&quot;,&quot;nameWithAlternates&quot;:[&quot;Meghalaya&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MZ&quot;,&quot;name&quot;:&quot;Mizoram&quot;,&quot;nameWithAlternates&quot;:[&quot;Mizoram&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;NL&quot;,&quot;name&quot;:&quot;Nagaland&quot;,&quot;nameWithAlternates&quot;:[&quot;Nagaland&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;OR&quot;,&quot;name&quot;:&quot;Odisha&quot;,&quot;nameWithAlternates&quot;:[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PY&quot;,&quot;name&quot;:&quot;Puducherry&quot;,&quot;nameWithAlternates&quot;:[&quot;Puducherry&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PB&quot;,&quot;name&quot;:&quot;Punjab&quot;,&quot;nameWithAlternates&quot;:[&quot;Punjab&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;RJ&quot;,&quot;name&quot;:&quot;Rajasthan&quot;,&quot;nameWithAlternates&quot;:[&quot;Rajasthan&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;SK&quot;,&quot;name&quot;:&quot;Sikkim&quot;,&quot;nameWithAlternates&quot;:[&quot;Sikkim&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TN&quot;,&quot;name&quot;:&quot;Tamil Nadu&quot;,&quot;nameWithAlternates&quot;:[&quot;Tamil Nadu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TS&quot;,&quot;name&quot;:&quot;Telangana&quot;,&quot;nameWithAlternates&quot;:[&quot;Telangana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TR&quot;,&quot;name&quot;:&quot;Tripura&quot;,&quot;nameWithAlternates&quot;:[&quot;Tripura&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UP&quot;,&quot;name&quot;:&quot;Uttar Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttar Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UK&quot;,&quot;name&quot;:&quot;Uttarakhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttarakhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;WB&quot;,&quot;name&quot;:&quot;West Bengal&quot;,&quot;nameWithAlternates&quot;:[&quot;West Bengal&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;}],&quot;formatting&quot;:{&quot;edit&quot;:&quot;{country}_{firstName}{lastName}_{company}_{address1}_{address2}_{city}{province}{zip}_{phone}&quot;,&quot;show&quot;:&quot;{firstName} {lastName}_{company}_{address1}_{address2}_{zip} {city} {province}_{country}_{phone}&quot;,&quot;__typename&quot;:&quot;AddressFormat&quot;},&quot;autocompletionField&quot;:&quot;ADDRESS1&quot;,&quot;buildingNumberRequired&quot;:false,&quot;buildingNumberMayBeInAddress2&quot;:false,&quot;pureNumericPostalCode&quot;:true,&quot;postalCodeRequired&quot;:true,&quot;__typename&quot;:&quot;Country&quot;},&quot;zone&quot;:{&quot;code&quot;:&quot;KA&quot;,&quot;name&quot;:&quot;Karnataka&quot;,&quot;__typename&quot;:&quot;AddressZone&quot;},&quot;coordinates&quot;:{&quot;latitude&quot;:12.9634,&quot;longitude&quot;:77.5855,&quot;__typename&quot;:&quot;GeographicalCoordinates&quot;},&quot;__typename&quot;:&quot;Geolocation&quot;},&quot;__typename&quot;:&quot;HttpRequestInfo&quot;},&quot;mobileCheckoutSdkConfig&quot;:{&quot;checkoutAuthenticationResult&quot;:null,&quot;checkoutSdkTheme&quot;:&quot;LIGHT&quot;,&quot;version&quot;:null,&quot;schema&quot;:null,&quot;variant&quot;:null,&quot;__typename&quot;:&quot;MobileCheckoutSdkConfig&quot;}},&quot;90cb5a1c52baa359bf1974d3db90812193108d8959c01c0db5cfa9e3918e3b6f{\&quot;checkpointData\&quot;:null,\&quot;queueToken\&quot;:null}&quot;:{&quot;session&quot;:{&quot;context&quot;:{&quot;session&quot;:[],&quot;policies&quot;:{&quot;fees&quot;:[],&quot;payment&quot;:[],&quot;buyerIdentity&quot;:[],&quot;tax&quot;:[],&quot;discount&quot;:[],&quot;merchandise&quot;:[],&quot;tip&quot;:[],&quot;delivery&quot;:[],&quot;__typename&quot;:&quot;PolicyFactSet&quot;},&quot;__typename&quot;:&quot;NegotiationContext&quot;},&quot;sessionType&quot;:&quot;CART_API&quot;,&quot;sourceId&quot;:&quot;Z2NwLXVzLWNlbnRyYWwxOjAxSFFBNkhBUERTVDZHUTBKQ1hBRkdUVlhR&quot;,&quot;sourceVersion&quot;:null,&quot;checkoutSessionIdentifier&quot;:&quot;4fef18d8f2df974bae8ffea75ccd446d&quot;,&quot;storefrontAnalyticsStartedOrderEventId&quot;:null,&quot;cartReturnUrl&quot;:&quot;https://www.tastynibbles.in/cart&quot;,&quot;headerLogoUrl&quot;:&quot;https://www.tastynibbles.in&quot;,&quot;previewScript&quot;:null,&quot;negotiate&quot;:{&quot;result&quot;:{&quot;queueToken&quot;:&quot;Aj2cbFbAW5ah-JdoJrslA3Np32HA7przrlrpTqQY6A7vlObwfyBSPmzApWCdMGQx3O7y6AIqbpjnCU2rb--ffWwposgAw15ChOZ4EUVhvb82yy76Va9kx2SeMUtcjZfyW8FPRORt51Vcps9ZipPRK7pwQmkLyCriCzr0v5n3BQULBqyRL2Pr9tUt&quot;,&quot;buyerProposal&quot;:{&quot;merchandiseDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;deliveryDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;delivery&quot;:{&quot;__typename&quot;:&quot;FilledDeliveryTerms&quot;,&quot;intermediateRates&quot;:false,&quot;progressiveRatesEstimatedTimeUntilCompletion&quot;:0,&quot;shippingRatesStatusToken&quot;:&quot;&quot;,&quot;deliveryLines&quot;:[]},&quot;merchandise&quot;:{&quot;taxesIncluded&quot;:true,&quot;merchandiseLines&quot;:[{&quot;stableId&quot;:&quot;03245fc4-706d-46f6-9ccb-8b9911396aa0&quot;,&quot;merchandise&quot;:{&quot;__typename&quot;:&quot;ProductVariantMerchandise&quot;,&quot;id&quot;:&quot;gid://shopify/ProductVariantMerchandise/42201877151919&quot;,&quot;digest&quot;:&quot;d870c63bae0f54b20dc353ad18659de6&quot;,&quot;variantId&quot;:&quot;gid://shopify/ProductVariant/42201877151919&quot;,&quot;title&quot;:&quot;Tender Coconut Water 200ml (Pack of 6)&quot;,&quot;untranslatedTitle&quot;:&quot;Tender Coconut Water 200ml (Pack of 6)&quot;,&quot;subtitle&quot;:null,&quot;untranslatedSubtitle&quot;:null,&quot;product&quot;:{&quot;id&quot;:&quot;gid://shopify/Product/7426164752559&quot;,&quot;vendor&quot;:&quot;Tasty Nibbles&quot;,&quot;productType&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Product&quot;},&quot;productUrl&quot;:&quot;/products/tasty-nibbles-tender-coconut-water-200ml-pack-of-6&quot;,&quot;image&quot;:{&quot;altText&quot;:null,&quot;one&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_64x64.jpg?v=1671702467&quot;,&quot;two&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_128x128.jpg?v=1671702467&quot;,&quot;four&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_256x256.jpg?v=1671702467&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;properties&quot;:[],&quot;requiresShipping&quot;:true,&quot;options&quot;:[{&quot;name&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Default Title&quot;,&quot;__typename&quot;:&quot;ProductVariantOption&quot;}],&quot;sellingPlan&quot;:null,&quot;giftCard&quot;:false},&quot;quantity&quot;:{&quot;items&quot;:{&quot;value&quot;:1,&quot;__typename&quot;:&quot;IntValueConstraint&quot;},&quot;__typename&quot;:&quot;ProposalMerchandiseQuantityByItem&quot;},&quot;totalAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;recurringTotal&quot;:null,&quot;lineAllocations&quot;:[{&quot;stableId&quot;:&quot;178d21c6d2d8141f29224f2c7e4ccaaf&quot;,&quot;quantity&quot;:1,&quot;totalAmountBeforeReductions&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceBeforeReductions&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;unitPrice&quot;:null,&quot;allocations&quot;:[],&quot;__typename&quot;:&quot;LineAllocation&quot;}],&quot;lineComponentsSource&quot;:null,&quot;lineComponents&quot;:[],&quot;__typename&quot;:&quot;MerchandiseLine&quot;}],&quot;__typename&quot;:&quot;FilledMerchandiseTerms&quot;},&quot;runningTotal&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;total&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;checkoutTotalBeforeTaxesAndShipping&quot;:null,&quot;checkoutTotalTaxes&quot;:null,&quot;checkoutTotal&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;deferredTotal&quot;:null,&quot;hasOnlyDeferredShipping&quot;:false,&quot;subtotalBeforeTaxesAndShipping&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;attribution&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;Attribution&quot;},&quot;saleAttributions&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;SaleAttributions&quot;},&quot;__typename&quot;:&quot;Proposal&quot;},&quot;sellerProposal&quot;:{&quot;merchandiseDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;deliveryDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;deliveryExpectations&quot;:{&quot;__typename&quot;:&quot;UnavailableTerms&quot;},&quot;availableRedeemables&quot;:{&quot;availableRedeemables&quot;:[],&quot;__typename&quot;:&quot;AvailableRedeemables&quot;},&quot;delivery&quot;:{&quot;__typename&quot;:&quot;UnavailableTerms&quot;},&quot;payment&quot;:{&quot;availablePayments&quot;:[{&quot;paymentMethod&quot;:{&quot;__typename&quot;:&quot;AnyOffsitePaymentMethod&quot;,&quot;availableOffsiteProviders&quot;:[{&quot;__typename&quot;:&quot;OffsiteProvider&quot;,&quot;paymentMethodIdentifier&quot;:&quot;cf83441aff97efc7e5a42d8bd8e5bf14&quot;,&quot;name&quot;:&quot;Razorpay Secure (UPI, Cards, Wallets, NetBanking)&quot;,&quot;paymentBrands&quot;:[&quot;visa&quot;,&quot;master&quot;,&quot;rupay&quot;,&quot;paytm&quot;,&quot;american_express&quot;,&quot;diners_club&quot;,&quot;maestro&quot;,&quot;airtel_money&quot;,&quot;amazon&quot;,&quot;ola_money&quot;,&quot;payzapp&quot;,&quot;freecharge&quot;,&quot;mobikwik&quot;,&quot;fpx&quot;,&quot;grabpay&quot;,&quot;touchngo&quot;,&quot;mcash&quot;,&quot;hsbc&quot;,&quot;boost&quot;],&quot;orderingIndex&quot;:1,&quot;showRedirectionNotice&quot;:true,&quot;availablePresentmentCurrencies&quot;:[&quot;INR&quot;]}]},&quot;__typename&quot;:&quot;PaymentLine&quot;}],&quot;paymentLines&quot;:[],&quot;billingAddress&quot;:null,&quot;paymentFlexibilityPaymentTermsTemplate&quot;:null,&quot;__typename&quot;:&quot;FilledPaymentTerms&quot;},&quot;poNumber&quot;:null,&quot;merchandise&quot;:{&quot;taxesIncluded&quot;:true,&quot;merchandiseLines&quot;:[{&quot;stableId&quot;:&quot;03245fc4-706d-46f6-9ccb-8b9911396aa0&quot;,&quot;merchandise&quot;:{&quot;__typename&quot;:&quot;ContextualizedProductVariantMerchandise&quot;,&quot;id&quot;:&quot;gid://shopify/ProductVariantMerchandise/42201877151919&quot;,&quot;digest&quot;:&quot;d870c63bae0f54b20dc353ad18659de6&quot;,&quot;variantId&quot;:&quot;gid://shopify/ProductVariant/42201877151919&quot;,&quot;title&quot;:&quot;Tender Coconut Water 200ml (Pack of 6)&quot;,&quot;untranslatedTitle&quot;:&quot;Tender Coconut Water 200ml (Pack of 6)&quot;,&quot;subtitle&quot;:null,&quot;untranslatedSubtitle&quot;:null,&quot;sku&quot;:&quot;CPDFG31939&quot;,&quot;price&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;product&quot;:{&quot;id&quot;:&quot;gid://shopify/Product/7426164752559&quot;,&quot;vendor&quot;:&quot;Tasty Nibbles&quot;,&quot;productType&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Product&quot;},&quot;productUrl&quot;:&quot;/products/tasty-nibbles-tender-coconut-water-200ml-pack-of-6&quot;,&quot;image&quot;:{&quot;altText&quot;:null,&quot;one&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_64x64.jpg?v=1671702467&quot;,&quot;two&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_128x128.jpg?v=1671702467&quot;,&quot;four&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_256x256.jpg?v=1671702467&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;properties&quot;:[],&quot;requiresShipping&quot;:true,&quot;options&quot;:[{&quot;name&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Default Title&quot;,&quot;__typename&quot;:&quot;ProductVariantOption&quot;}],&quot;sellingPlan&quot;:null,&quot;giftCard&quot;:false,&quot;deferredAmount&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;}},&quot;quantity&quot;:{&quot;items&quot;:{&quot;value&quot;:1,&quot;__typename&quot;:&quot;IntValueConstraint&quot;},&quot;__typename&quot;:&quot;ProposalMerchandiseQuantityByItem&quot;},&quot;totalAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;recurringTotal&quot;:null,&quot;lineAllocations&quot;:[{&quot;stableId&quot;:&quot;178d21c6d2d8141f29224f2c7e4ccaaf&quot;,&quot;quantity&quot;:1,&quot;totalAmountBeforeReductions&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceBeforeReductions&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;unitPrice&quot;:null,&quot;allocations&quot;:[],&quot;__typename&quot;:&quot;LineAllocation&quot;}],&quot;lineComponentsSource&quot;:null,&quot;lineComponents&quot;:[],&quot;__typename&quot;:&quot;MerchandiseLine&quot;}],&quot;__typename&quot;:&quot;FilledMerchandiseTerms&quot;},&quot;note&quot;:{&quot;customAttributes&quot;:[],&quot;message&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Note&quot;},&quot;scriptFingerprint&quot;:{&quot;signature&quot;:null,&quot;signatureUuid&quot;:null,&quot;lineItemScriptChanges&quot;:[],&quot;paymentScriptChanges&quot;:[],&quot;shippingScriptChanges&quot;:[],&quot;__typename&quot;:&quot;ScriptFingerprint&quot;},&quot;transformerFingerprintV2&quot;:null,&quot;buyerIdentity&quot;:{&quot;buyerIdentity&quot;:{&quot;presentmentCurrency&quot;:&quot;INR&quot;,&quot;countryCode&quot;:&quot;IN&quot;,&quot;market&quot;:{&quot;id&quot;:&quot;gid://shopify/Market/472973487&quot;,&quot;handle&quot;:&quot;in&quot;,&quot;__typename&quot;:&quot;Market&quot;},&quot;__typename&quot;:&quot;GuestProfile&quot;},&quot;contactInfoV2&quot;:null,&quot;marketingConsent&quot;:[],&quot;shopPayOptInPhone&quot;:null,&quot;__typename&quot;:&quot;FilledBuyerIdentityTerms&quot;},&quot;checkoutCompletionTarget&quot;:&quot;ORDER&quot;,&quot;recurringTotals&quot;:[],&quot;subtotalBeforeTaxesAndShipping&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;totalSavings&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;runningTotal&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;total&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;checkoutTotalBeforeTaxesAndShipping&quot;:null,&quot;checkoutTotalTaxes&quot;:null,&quot;checkoutTotal&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;deferredTotal&quot;:null,&quot;hasOnlyDeferredShipping&quot;:false,&quot;subtotalBeforeReductions&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;360.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;duty&quot;:{&quot;totalDutyAmount&quot;:null,&quot;totalTaxAndDutyAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;totalAdditionalFeesAmount&quot;:null,&quot;__typename&quot;:&quot;FilledDutyTerms&quot;},&quot;tax&quot;:{&quot;totalTaxAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;totalTaxAndDutyAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;totalAmountIncludedInTarget&quot;:null,&quot;exemptions&quot;:[],&quot;__typename&quot;:&quot;FilledTaxTerms&quot;},&quot;tip&quot;:{&quot;tipSuggestions&quot;:[{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0.15,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;54.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}},{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0.18,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;64.8&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}},{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0.2,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;72.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}},{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}}],&quot;terms&quot;:{&quot;__typename&quot;:&quot;UnavailableTerms&quot;},&quot;__typename&quot;:&quot;TipWrapper&quot;},&quot;localizationExtension&quot;:{&quot;fields&quot;:[],&quot;__typename&quot;:&quot;LocalizationExtension&quot;},&quot;landedCostDetails&quot;:{&quot;incotermInformation&quot;:null,&quot;__typename&quot;:&quot;LandedCostDetails&quot;},&quot;dutiesIncluded&quot;:false,&quot;nonNegotiableTerms&quot;:null,&quot;optionalDuties&quot;:{&quot;buyerRefusesDuties&quot;:false,&quot;refuseDutiesPermitted&quot;:false,&quot;__typename&quot;:&quot;OptionalDuties&quot;},&quot;attribution&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;Attribution&quot;},&quot;saleAttributions&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;SaleAttributions&quot;},&quot;managedByMarketsPro&quot;:false,&quot;captcha&quot;:null,&quot;cartCheckoutValidation&quot;:null,&quot;alternativePaymentCurrency&quot;:null,&quot;__typename&quot;:&quot;Proposal&quot;},&quot;__typename&quot;:&quot;NegotiationResultAvailable&quot;},&quot;errors&quot;:[{&quot;code&quot;:&quot;BUYER_IDENTITY_MISSING_CONTACT_METHOD&quot;,&quot;localizedMessage&quot;:&quot;Missing a valid contact method.&quot;,&quot;nonLocalizedMessage&quot;:&quot;Missing a valid contact method.&quot;,&quot;localizedMessageHtml&quot;:&quot;Missing a valid contact method.&quot;,&quot;target&quot;:&quot;$.buyerIdentity&quot;,&quot;__typename&quot;:&quot;UnprocessableTermViolation&quot;},{&quot;code&quot;:&quot;PAYMENTS_UNACCEPTABLE_PAYMENT_AMOUNT&quot;,&quot;localizedMessage&quot;:&quot;Your payment couldn’t be processed because your order total has changed. Check your order total and try again.&quot;,&quot;nonLocalizedMessage&quot;:&quot;The sum of proposed payments cannot cover the total amount to be paid.&quot;,&quot;localizedMessageHtml&quot;:&quot;Your payment couldn’t be processed because your order total has changed. Check your order total and try again.&quot;,&quot;target&quot;:&quot;$.payment&quot;,&quot;__typename&quot;:&quot;UnprocessableTermViolation&quot;}],&quot;__typename&quot;:&quot;NegotiationResultPayload&quot;},&quot;__typename&quot;:&quot;Session&quot;}},&quot;6b3fc7eaad5a75354e75faeeddee28a1f369b6edeb165f70418872e2c35fb565{}&quot;:{&quot;shop&quot;:{&quot;id&quot;:&quot;gid://shopify/Shop/55925866671&quot;,&quot;designSystem&quot;:{&quot;colors&quot;:{&quot;global&quot;:{&quot;brand&quot;:&quot;hsl(19.916, 0.0%, 5.063%)&quot;,&quot;accent&quot;:&quot;hsl(19.916, 0.0%, 5.063%)&quot;,&quot;decorative&quot;:null,&quot;success&quot;:null,&quot;warning&quot;:null,&quot;critical&quot;:&quot;hsl(12.177, 100.0%, 64.407%)&quot;,&quot;info&quot;:null,&quot;__typename&quot;:&quot;ColorGlobal&quot;},&quot;schemes&quot;:{&quot;scheme1&quot;:{&quot;base&quot;:{&quot;background&quot;:&quot;hsl(19.916, 0.0%, 100.0%)&quot;,&quot;text&quot;:null,&quot;border&quot;:null,&quot;icon&quot;:null,&quot;accent&quot;:&quot;hsl(19.916, 0.0%, 5.063%)&quot;,&quot;decorative&quot;:null,&quot;__typename&quot;:&quot;ColorRoles&quot;},&quot;control&quot;:null,&quot;primaryButton&quot;:null,&quot;secondaryButton&quot;:null,&quot;__typename&quot;:&quot;ColorScheme&quot;},&quot;scheme2&quot;:{&quot;base&quot;:{&quot;background&quot;:&quot;hsl(18.435, 0.0%, 98.272%)&quot;,&quot;text&quot;:null,&quot;border&quot;:null,&quot;icon&quot;:null,&quot;accent&quot;:&quot;hsl(19.916, 0.0%, 5.063%)&quot;,&quot;decorative&quot;:null,&quot;__typename&quot;:&quot;ColorRoles&quot;},&quot;control&quot;:null,&quot;primaryButton&quot;:null,&quot;secondaryButton&quot;:null,&quot;__typename&quot;:&quot;ColorScheme&quot;},&quot;__typename&quot;:&quot;ColorSchemes&quot;},&quot;__typename&quot;:&quot;Colors&quot;},&quot;typography&quot;:null,&quot;cornerRadius&quot;:null,&quot;__typename&quot;:&quot;DesignSystem&quot;},&quot;customizations&quot;:{&quot;global&quot;:null,&quot;favicon&quot;:null,&quot;main&quot;:null,&quot;expressCheckout&quot;:null,&quot;orderSummary&quot;:null,&quot;header&quot;:{&quot;alignment&quot;:null,&quot;position&quot;:null,&quot;blockPadding&quot;:null,&quot;logo&quot;:{&quot;image&quot;:{&quot;main&quot;:&quot;https://cdn.shopify.com/s/files/1/0559/2586/6671/files/Brand_logo_Tasty_nibbles-01_575ef6d1-1653-4b3c-b8fe-e3fb05f76ed1_x320.png?v=1652345831&quot;,&quot;height&quot;:81,&quot;width&quot;:96,&quot;altText&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;maxWidth&quot;:95,&quot;visibility&quot;:null,&quot;__typename&quot;:&quot;HeaderLogoCustomizations&quot;},&quot;banner&quot;:null,&quot;__typename&quot;:&quot;HeaderCustomizations&quot;},&quot;footer&quot;:null,&quot;cartLink&quot;:null,&quot;buyerJourney&quot;:null,&quot;headingLevel1&quot;:null,&quot;headingLevel2&quot;:null,&quot;headingLevel3&quot;:null,&quot;control&quot;:null,&quot;label&quot;:null,&quot;select&quot;:null,&quot;textField&quot;:null,&quot;checkbox&quot;:null,&quot;choiceList&quot;:null,&quot;primaryButton&quot;:null,&quot;secondaryButton&quot;:null,&quot;merchandiseThumbnail&quot;:null,&quot;__typename&quot;:&quot;CheckoutCustomizations&quot;},&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;}}}"/><meta name="serialized-graphql-endpoint" content="&quot;https://www.tastynibbles.in/checkouts/unstable/graphql&quot;"/><meta name="serialized-shop-pay-config" content="{&quot;authorization&quot;:null,&quot;callback_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0YXN0eW5pYmJsZXMubXlzaG9waWZ5LmNvbSIsImF1ZCI6WyJ0YXN0eW5pYmJsZXMubXlzaG9waWZ5LmNvbSIsInNob3AuYXBwIl0sIm5iZiI6MTcwODY2NTY1MSwic2Vzc2lvbl90b2tlbiI6Ik1rWjVaMlU0YTFZdmVHMHZVblJPZGxKbFRVMUJPRVExV2s1d2IzQk1VRU52Ukc5MmJIbE9jelJrWVRScGRXNW5ORzVLTUhFdlMybGhZWGR4VUhwdlNEWXhjSEptT0hCeGEzZE5ORkpMZVhFd2NEWTRNVmwwVUVweFEzVlVURU5rV0VaNmNGYzJSbEJyU0dWd2RrZDJaVEZ4TjBkalNsUnVXbXN5YWpSMFV6azRSVGhyY1dwb1ptTTFaV1ZIZDB0cFpIRnpSbGQ2Wm5abFdVSTNhalpXVjB0YVVXSktUV1JSTVZOeFVsUnFaemQwTlc1RU5XOVVRbmxDUVdOSVQyRnBVWEJSU0RkelpHeHVlakF6V1RKSlJHMVBkRTFsU3pBeVFqZFpWSFpYTVdNeVdURlZNRWxqTkRCRGNXcHJUVVpMVUdsUVpUVTJRakV5UVdGWGFYVnFObkJTYWpGTFRqRlVORll5WkN0cFdVUldVUzltYkdWRVlWSlhUWFpMZGpJNFluTkdNRFJSUFQwdExYQkhiek5vWWtadlIwTk1hemR3VG1RdExVNUZMMDRyVERGa1VTOUZkekJQUlZSTlpXUXpaRUU5UFEiLCJzZXNzaW9uX2N1c3RvbWVyX2lkIjpudWxsLCJsb2dpbl93aXRoX3Nob3BfY3VzdG9tZXJfaWQiOm51bGwsInNob3BfYWNjb3VudF91dWlkIjpudWxsLCJpZGVudGl0eV9jdXN0b21lcl9pZCI6bnVsbCwiY3VzdG9tZXJfYXV0aGVudGljYXRpb25fYXV0aF9wcm92aWRlciI6bnVsbCwic3RvcmVmcm9udF9kaWdlc3QiOm51bGwsImV4cCI6MTcwODY4NzI1MSwibGFuZGluZ19wYWdlIjpudWxsfQ.D9YJa278TqDF22ffE3cr6fJ93azO5TB0uL2XJRjjjhc&quot;,&quot;checkout_as_guest_url&quot;:&quot;https://www.tastynibbles.in/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSFFBNkhBUERTVDZHUTBKQ1hBRkdUVlhR?locale=en-IN&amp;shop_pay_logout=true&amp;skip_shop_pay=true&quot;,&quot;from_classic&quot;:false,&quot;iframe_token&quot;:&quot;MGdKT1QxT2dPQ3NVRGhIU1FEaStXY0UyaTJ1cFNzUnZ4cVYvSWZteWhJWVRrNllLcDdJKzdqTWhUWnhjZmVkaS0tNHdnaHZLS1VFc3FxTUdMeGR6ZHdRQT09--d31370b1cd8b8f1399bc3932102f209e39e63155&quot;,&quot;pre_select_installments&quot;:false,&quot;redirect_source&quot;:null,&quot;redirect_url&quot;:&quot;QXJMeXJSa0Y1cGFmeGJDSnBucGdsaHExeXVtWlVaYUJtQ0RmbkUzT1VBNEZMSnJKeHNmRXJOVVRXaVJDV2JtL1hQdzZkMjJwV053MStqVnZpREZQODUzdFMvUlAySnlqcmVUM0w2L2c0ejR2bzhjQ3ZzVjZEWkxRcDlIUTNueTREQmRXaFlnbkV1YUdnYUdyN3VkakJZR1BWSXM1dk9nSWhWTUNyZHR3RkF0ZTBuT0RVSG5iZDlacHBQVnp6cDhCTVlpM29xUk9vV0t0N2xGemtkLzJsRkZWdkZPeW5RbHQ0SVUwbklHUFNueTZlczhlUmJibW5nZmdvc01uY05OdURmbUVOcDVkR0JXYktDY2FvREsvdm9ELzBDQVRoVExRMkw2SklrZ09MeFVFVlFHZHpJK0RCQWlnbVRTMTJZNjd5YitOMFlHcDdWWWd1YVh0WjBIbFlPVnVEcVBEbEkvMlcvWncxOEI1dEhyNjJTakJSeTE5OHNnMmFJMU4zbW1kaHhGVGFKeXZxK1dFcGp2SXR2ZVhlT1FrMXEzWHYvamxCNy85OXFDWHJGZDF3UGx3YjJnQzJrb08wbWRibzZWeWkvZ1Z3U2dCYVNJbmc0NElNd1FSMzUyZ0R1bmttYm44cWFvOEtYcU0yOGF4S2tQL0p0T2FWMTR4dFdaSE5QaEhPcUNDRlE1VUcrMC8vcmVBNzRHcHJSbnc0QmFpMzNQSDFiTFRKZ0s0V1pYNmFabW9zWVNJZjhaRm1lSU02U2dSZkRVMk1peFcyalEzaitBRUpseDNiT2JJeDFjNEZiMU1rUmZpMVFpYTVnKzFkbGEvS1IvV1Jrd09QU2pPOUZLZDh0bkp4ekZGcElUSlF5a3JlVFdXOHVaREFxbGxsRlViUDhYVStyY0JGb0wwb3pETVMrdllhYSt4cVlyNy9KYytjTzVlMnJ4eDBOOXVJeng4UXhpZUgraG5UOW1pYmY0aktiT3c2blRuUnZxd21FTTlGeVdhL054dW1tK0JmZXJ2MUFPREtHYk8za1d5aEFFN0JSQ1FZWU9mRk1yb2RRb3Fwb2FmU1VET1EyaEdMMUNuMEhmTkFKcEJta2lBUmNBQWgzdVhpcDRqWDFCOEpBSlI2YWIvQ2VlUFNBM1MzYmRDRzVwRjhXRVJTbDN1TnlTWXBZUERrb0lNc1Y5ckFISlBhSXpTNXJGeFF2UnUvdDlMVXQ5bG42ZEhvOE1XSzRsbTdtanZNendrRmZlK1BqZklDem5adVVrcGc4VzdCTStXVFdld0twb1BxRHBldWtuaGlDSzBoVWZRU0p6OFovNXp4SlBVQXFWWURUZGUvK1dvVFl5WlNMd0VQNTFQQ2dKaCtIUXZTb2F3djBaZ0h1RmppSkFhS0JybG1XZmdMU2dPbnJlNmFXRkR6c3dSNWcrdEhwOVIyT1NQQWt0OEtPeTIrWkFqUkhqVjVsNThWSnQyS1JTZ1EzZXlkZmdkRk41TUdXTytRSjlOd0grMExCZ0hvblluN2JNRWhHMXJ0K2dNdnVVSXI3VEVRT2Q5WkJ3YVl0aVNYUUhTbkN4RHl5SG55SVBpam1qbmtjRU1mUi91WEtCTXF0QXN4clJtUm0wKys2TUY4NWtEaTBRUTBuRmJQZ3RDTFNuZm1RU0RUdU8za3RSc2hORjRnb0tadVpNNVNQODV6T2x2VmdpL2puUWpPRVc0ZDBXcWVpWFVXdnBNUmkvZ3kxblNoaU9aZ21CSFhDc294b2c1RkFCQVBOQ2J5SExEZEdMcXZTdVRTQXVrQ1loYXdZVytSeklnY05BYUxuSUdsVmF1ZGJyUEQ1bE93dVB5eTd2eWV6Vk1mQ2Y5cXo2QXh5OXIzY0lMam5XMThyZWtEVm1pTUt0V1lDWWN3REhxTWRnVnNkaWtlaFk1QUU4Ni9MU1RPZFU3bG5WelJjckcrc0thc2g4YkxMeFdtTkRUN1ZzekdJbzZqMEgzYWZ6czY3Y1dhVEIvWXJXS0ttR0ZzejYwMWc0ZUZwY1cxVWpoTXpPR2I5Y2VQWHBEeWR5WHJGQmN4SWQ3Si8vQkhLVkwwaWVhS1BGUGhkQ1lxWFR0WUNGSzBBL2N5MEo5V2p1bys5WENxbkVxbUwxc3pVQ0FDdWZ1TEIrMGN0S09DRGlHdDBvNkowVGZTbjNucmpLa2RxWkx4VFRWL1dlQkZNVFRrZzA3SHlGYVdlUldLV2lIajB1Y2FHVXQxRndoT005c0lRcjVIbDlwdzNadjZkV0hpM0dEbnc0TURtdHZaZXc1RFQ2SjdZbm91anFhVWZkenRzeHVNOExWRWJLR0d3SW9MajZ3REFOZUtXUlhDWU13TjVNM0Rad2g2Q1dCOTlULzlYRExBbjFGcFpTNU5qa1ZRL1QyczNXQ2ZNMmJZUjd2QVNnVmlOR29TVHRWVmx5YXdoeWdUNjViMnNaWm5DMzVVbzhBb2JDMmE1N1UtLWNxRnlkQzBhSlQ1WnVRZWpEeTlOd2c9PQ==--2278010ed07ec5d7b0aecba34e5bc7596287a684&quot;,&quot;tracking_unique&quot;:&quot;9bc51c6c-5d3a-42d2-99f4-e52776680c40&quot;,&quot;tracking_visit&quot;:&quot;3a551aaf-aece-4bcb-ab98-7a1ffd6210e9&quot;,&quot;transaction_params&quot;:&quot;encrypted_params=SmZZcDlGdEQ5cmZZaFZqcE1BZFBFWVVxVzA0VjJLbWJESTNUYmZxQUtiQWNhbnI4YXNnZndDQlVYeng5VGRIRE5qZjRuUnRlUHlXWFJVamJaM2FYckxVUmtRR1pzbE1wRVEzV2hROTRxWmR4aFVySkdlc2RHclhoRTJmaldyOVktLSt6ODFYay9pVzRteWtqbnR6N2hxY0E9PQ%3D%3D--21566fde0bef5ef9a7da45c77824e61bf5efc95e&quot;,&quot;web_url&quot;:&quot;https://www.tastynibbles.in/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSFFBNkhBUERTVDZHUTBKQ1hBRkdUVlhR?locale=en-IN&amp;shop_pay_logout=true&amp;skip_shop_pay=true&quot;}"/><meta name="serialized-deploy-stage" content="&quot;production&quot;"/><meta name="serialized-public-path" content="&quot;https://cdn.shopify.com/shopifycloud/checkout-web/assets/&quot;"/><meta name="serialized-receipt" content="{&quot;id&quot;:null,&quot;exists&quot;:false,&quot;inProgress&quot;:false,&quot;orderStatusPageUrl&quot;:null,&quot;shopPay&quot;:false}"/><meta name="serialized-request-id" content="&quot;859d05a01eb73188&quot;"/><meta name="serialized-server-handling" content="&quot;fast&quot;"/><meta name="serialized-worker-version" content="&quot;fast&quot;"/><meta name="serialized-server-render" content="&quot;render&quot;"/><meta name="serialized-session-finished" content="false"/><meta name="serialized-api-client-id" content="580111"/><meta name="serialized-redesign-enabled" content="true"/><meta name="serialized-shop" content="{&quot;id&quot;:&quot;gid://shopify/Shop/55925866671&quot;,&quot;name&quot;:&quot;Tasty Nibbles&quot;,&quot;domain&quot;:&quot;www.tastynibbles.in&quot;,&quot;myshopifyDomain&quot;:&quot;tastynibbles.myshopify.com&quot;}"/><meta name="serialized-login-url" content="&quot;https://www.tastynibbles.in/account/login?checkout_url=%2Fcheckouts%2Fcn%2FZ2NwLXVzLWNlbnRyYWwxOjAxSFFBNkhBUERTVDZHUTBKQ1hBRkdUVlhR%3F_ga%3Dundefined%26locale%3Den-IN&quot;"/><meta name="serialized-logout-url" content="&quot;https://www.tastynibbles.in/account/logout?return_url=%2Fcheckouts%2Fcn%2FZ2NwLXVzLWNlbnRyYWwxOjAxSFFBNkhBUERTVDZHUTBKQ1hBRkdUVlhR%3F_ga%3Dundefined%26locale%3Den-IN&quot;"/><meta name="serialized-invoice-login-type" content="null"/><div id="app"></div></body></html>

@@ -1,0 +1,15 @@
+(function(){
+  var wa_bot_identifier = '',base_url = '', brand_name= '';
+  var scripts = document.getElementsByTagName("script");
+  for (var i = 0; i < scripts.length; i++) {
+    if (scripts[i].src && scripts[i].src.includes("wa_bot_identifier")) {
+      var urlSrc = scripts[i].src;
+      urlParams = urlSrc.split("?");
+      var bot_key_param = urlParams[1].split("&");
+      wa_bot_identifier = bot_key_param[0].split("=")[1];
+      base_url = bot_key_param[1].split("=")[1];
+      brand_name = bot_key_param[2].split("=")[1];
+    }
+  }
+  !function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/whatsapp_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,base_url,{wa_bot_identifier:wa_bot_identifier,server:base_url,brand:brand_name,e:"p"});
+})();

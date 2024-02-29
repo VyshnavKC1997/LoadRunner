@@ -1,0 +1,18 @@
+POST /.well-known/shopify/monorail/unstable/produce_batch HTTP/1.1
+Host: www.tastynibbles.in
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 241
+Origin: https://www.tastynibbles.in
+DNT: 1
+Sec-GPC: 1
+Connection: keep-alive
+Referer: https://www.tastynibbles.in/account
+Cookie: keep_alive=c0c53e50-ad6d-44d0-8428-fea135f7b536; secure_customer_sig=236df76e736857a203847593810c4cf5; localization=IN; _cmp_a=%7B%22purposes%22%3A%7B%22a%22%3Atrue%2C%22p%22%3Atrue%2C%22m%22%3Atrue%2C%22t%22%3Atrue%7D%2C%22display_banner%22%3Afalse%2C%22sale_of_data_region%22%3Afalse%7D; _tracking_consent=%7B%22con%22%3A%7B%22CMP%22%3A%7B%22m%22%3A%22%22%2C%22a%22%3A%22%22%2C%22p%22%3A%22%22%2C%22s%22%3A%22%22%7D%7D%2C%22lim%22%3A%5B%22CMP%22%5D%2C%22region%22%3A%22INKA%22%2C%22v%22%3A%222.1%22%2C%22reg%22%3A%22%22%7D; _shopify_y=5468668d-62ef-4e42-bb35-923c88c414a4; _shopify_s=3a551aaf-aece-4bcb-ab98-7a1ffd6210e9; _orig_referrer=; _landing_page=%2F; _shopify_sa_t=2024-02-23T04%3A05%3A39.690Z; _shopify_sa_p=; _ga_WCN3C8KG6R=GS1.1.1708660977.1.1.1708661139.23.0.0; _ga=GA1.1.1281374422.1708660978; _ga_Y41CDBPZ5C=GS1.1.1708660979.1.1.1708661139.0.0.0; _gcl_au=1.1.1793844992.1708660979.899084075.1708661100.1708661099; _shopify_essential=:AY3UIfYgAAH_fGqXNWDpCEsXQAW83yin1bRaquf-vWZ8cwMW5jufAihhPA3delBJJ4GFfnRWkwb0Ja8kuLtvacfekBoLUG-vxWQmNnYOPgcU:; _secure_session_id=ebf4a157b2e549616c23efd6de5b7d0e; _storefront_u=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9KZEhsd1pWc0dTU0lVWTNWemRHOXRaWEpmWTNKbFlYUmxCam9HUlZRNkVHaGhjSEJsYm1Wa1gyRjBaaGN4TnpBNE5qWXhNVEF4TGpJeE1qazFNemc9IiwiZXhwIjoiMjAyNC0wMi0yM1QwNDowNjowMS4yMTJaIiwicHVyIjoiY29va2llLl9zdG9yZWZyb250X3UifX0%3D--e21890fd373fd7fa18f28201fed000ac3742a8df
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+

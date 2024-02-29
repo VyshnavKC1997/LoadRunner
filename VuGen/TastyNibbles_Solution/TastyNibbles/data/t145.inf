@@ -1,0 +1,11 @@
+[t145]
+FileName1=t145.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/unstable/produce_batch
+Total=1
+RequestHeaderFile=t145_RequestHeader.txt
+RequestBodyFile=t145_RequestBody.txt
+ResponseHeaderFile=t145_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_145.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

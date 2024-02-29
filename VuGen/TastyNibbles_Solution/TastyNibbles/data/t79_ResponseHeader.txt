@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Date: Fri, 23 Feb 2024 04:05:40 GMT
+Content-Length: 0
+Connection: keep-alive
+access-control-allow-credentials: true
+access-control-allow-headers: User-Agent,Accept,Content-Type,X-Monorail-Edge-Event-Created-At-Ms,X-Monorail-Edge-Event-Sent-At-Ms,X-Monorail-Edge-Client-Message-Id,X-Monorail-Edge-Device-Install-Id,X-Monorail-Edge-Accept-Language,X-Monorail-Edge-Content-Language,X-Forwarded-For
+access-control-allow-methods: OPTIONS,POST
+access-control-allow-origin: https://www.tastynibbles.in
+access-control-max-age: 86400
+x-request-id: c65ec278-3f41-4a58-84d6-ead98a143e7d
+x-robots-tag: noindex
+via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F%2BKp%2BuAffxi%2BRO3sElWXASQnuV7qQe79sceQv8B8bgc05etFTEyJpMiD7iKlqLCS5cf4GmkmFtDpxrtgZrxue8Rse%2B1q3XhIhZ3Yidd5FzR5o%2BecztUE7r6AQj67dGqG2qqH8Dw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Server-Timing: cfRequestDuration;dur=331.000090
+Server: cloudflare
+CF-RAY: 859c977ecf0ef323-BOM
+

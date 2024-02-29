@@ -1,0 +1,4 @@
+"customer_info=%7B%22id%22%3A7180330008751%2C%22name%22%3A%22Brunda+M%22%2C%22email%22%3A%22bru"
+"nda123%40gmail.com%22%2C%22tags%22%3A%5B%5D%2C%22isB2B%22%3Afalse%2C%22metafields%22%3A%7B%22c"
+"ompanyId%22%3A%22%22%2C%22companyLocationId%22%3A%22%22%2C%22companyContactId%22%3A%22%22%7D%7"
+"D&customer_location=null&promotion_url="

@@ -1,0 +1,15 @@
+[t55]
+FileName1=t55.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/unstable/produce_batch
+Total=3
+RequestHeaderFile=t55_RequestHeader.txt
+RequestBodyFile=t55_RequestBody.txt
+ResponseHeaderFile=t55_ResponseHeader.txt
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_55.xml
+FileName2=t55_preloads.html
+URL2=https://www.tastynibbles.in/checkouts/internal/preloads.js?permanent-domain=tastynibbles.myshopify.com&locale=en-IN
+FileName3=t55_magic-checkout.html
+URL3=https://checkout.razorpay.com/v1/magic-checkout.js
+[ProtocolInfo]
+ProtocolId=QTWeb

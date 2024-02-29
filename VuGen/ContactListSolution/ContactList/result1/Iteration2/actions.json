@@ -1,0 +1,56 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: login",
+                "infFile": "t2.inf",
+                "time": 1708596602192
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: contactList",
+                "infFile": "t3.inf",
+                "time": 1708596603746
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: json",
+                "infFile": "t4.inf",
+                "time": 1708596604160
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Custom Request: contacts",
+                "infFile": "t5.inf",
+                "time": 1708596604454
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: addContact",
+                "infFile": "t6.inf",
+                "time": 1708596604988
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Custom Request: contacts_2",
+                "infFile": "t7.inf",
+                "time": 1708596605297
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: contactList_2",
+                "infFile": "t8.inf",
+                "time": 1708596605829
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Custom Request: contacts_3",
+                "infFile": "t9.inf",
+                "time": 1708596606106
+            }
+        ],
+        "transactions": []
+    }
+]

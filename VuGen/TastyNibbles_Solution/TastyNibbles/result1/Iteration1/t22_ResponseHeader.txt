@@ -1,0 +1,4 @@
+HTTP/2.0 103
+Status: 103
+link: <https://cdn.shopify.com>; rel=preconnect, <https://cdn.shopify.com>; crossorigin; rel=preconnect
+

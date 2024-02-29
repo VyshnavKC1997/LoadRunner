@@ -1,0 +1,6 @@
+"{\"metadata\":{\"event_sent_at_ms\":1708661287490},\"events\":[{\"schema_id\":\"trekkie_asset_"
+"context/1.1\",\"payload\":{\"build_id\":\"4cd2e3324844ec508679a5cd021150832227ceb5\",\"page_ur"
+"l\":\"https://www.tastynibbles.in/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0p"
+"LWEpZSkRC?_ga=undefined\",\"app_name\":\"checkout\",\"shop_id\":55925866671,\"monorail_region\""
+":\"shop_domain\",\"source\":\"trekkie-checkout-one\"},\"metadata\":{\"event_created_at_ms\":17"
+"08661287476}}]}"

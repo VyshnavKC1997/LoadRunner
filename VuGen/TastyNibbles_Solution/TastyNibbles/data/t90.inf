@@ -1,0 +1,13 @@
+[t90]
+FileName1=t90.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/unstable/produce_batch
+Total=2
+RequestHeaderFile=t90_RequestHeader.txt
+RequestBodyFile=t90_RequestBody.txt
+ResponseHeaderFile=t90_ResponseHeader.txt
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_90.xml
+FileName2=t90_preloads.html
+URL2=https://www.tastynibbles.in/checkouts/internal/preloads.js?permanent-domain=tastynibbles.myshopify.com&locale=en-IN
+[ProtocolInfo]
+ProtocolId=QTWeb

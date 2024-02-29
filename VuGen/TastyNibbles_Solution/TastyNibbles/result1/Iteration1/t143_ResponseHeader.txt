@@ -1,0 +1,34 @@
+HTTP/2.0 200
+Status: 200
+date: Fri, 23 Feb 2024 05:20:57 GMT
+content-type: application/json; charset=utf-8
+x-sorting-hat-podid: 174
+x-sorting-hat-shopid: 55925866671
+vary: Accept-Encoding
+vary: Accept
+access-control-allow-origin: *
+access-control-expose-headers: Access-Control-Allow-Origin, X-Request-Id
+x-frame-options: DENY
+x-shopid: 55925866671
+x-shardid: 174
+content-language: en-IN
+strict-transport-security: max-age=7889238
+server-timing: processing;dur=305, edge_cart;desc="count=2";dur=11.71, graphql;desc="checkout/query/Proposal"
+x-shopify-stage: production
+content-security-policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=query&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=checkouts%2Fone%2Fgraphql&source%5Bsection%5D=api&source%5Buuid%5D=98a56c7c-7b63-4a62-86aa-930d406134c4
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+x-xss-protection: 1; mode=block; report=/xss-report?source%5Baction%5D=query&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=checkouts%2Fone%2Fgraphql&source%5Bsection%5D=api&source%5Buuid%5D=98a56c7c-7b63-4a62-86aa-930d406134c4
+x-envoy-upstream-service-time: 308
+x-dc: gcp-asia-south1,gcp-us-central1
+content-encoding: gzip
+x-request-id: 98a56c7c-7b63-4a62-86aa-930d406134c4
+cf-cache-status: DYNAMIC
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yySv6PhhBRG0c0JhIiIbYkL73gIAsf43wizzzKSgKYHQx0Y84In2kYWR1gQSFANeIJA5cGuZRy3XaUKW1O0FkbJC3PT6naJqu%2Ft9r3wEvXVd78YEqVIHfCKLpIPmjZxeeMtMWHE%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+server-timing: cfRequestDuration;dur=1119.999886
+server: cloudflare
+cf-ray: 859d05bfed05f2ce-BOM
+alt-svc: h3=":443"; ma=86400
+

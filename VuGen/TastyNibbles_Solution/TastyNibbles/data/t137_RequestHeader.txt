@@ -1,0 +1,23 @@
+POST /checkouts/unstable/graphql HTTP/1.1
+Host: www.tastynibbles.in
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
+Accept: application/json
+Accept-Language: en-IN
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.tastynibbles.in/
+content-type: application/json
+x-checkout-one-session-token: Z3drY2pjNjdoY3JnaXRIZjJlRUo3c25uT1pETjYwcDhraFZmVXdLb250SjJSR1ZUdm5GNWdsakxJUCtDaFl1UGUyeEFTd3oxS3owaldMRXE5M3ZTOXFNblVTei9yMlprK1Rmc0NHbzJ0dnE4Uk4xbllmaXdRWXZjVDZIUm1CTHIwZkVQalVrUituTXBFYkYyUnVpTkh2dHZRTTU5YXNOdnlZckkvanRxeURvVG5NVXNJM05aZUFaUUpjR3Bua3NNNVNjVzVlWmxGczVZQSt4bzZ6T3ZFc3pFbUFsSjl3cjdmT1p1dkdUaUZqTVRTTVV3amNvMXVkV3NCOXRuL2k3eWZHd2E0cnNVVDRDZ2FXdElEZU1DL0FGWDBvK2ZnRlFMcHFlTHJRPT0tLTRGejJDc0c2eGkrQVBiYy8tLUZ5dlJxeDdUdTZVM2llNFdEdnhub1E9PQ
+x-checkout-web-build-id: 06a9290371204383f667a10dff848c53ddf71dbc
+x-checkout-web-deploy-stage: production
+x-checkout-web-server-handling: fast
+x-checkout-web-source-id: Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0pLWEpZSkRC
+Content-Length: 155
+Origin: https://www.tastynibbles.in
+DNT: 1
+Sec-GPC: 1
+Connection: keep-alive
+Cookie: keep_alive=bc020e10-6047-4078-beab-624423a8184f; secure_customer_sig=236df76e736857a203847593810c4cf5; localization=IN; _cmp_a=%7B%22purposes%22%3A%7B%22a%22%3Atrue%2C%22p%22%3Atrue%2C%22m%22%3Atrue%2C%22t%22%3Atrue%7D%2C%22display_banner%22%3Afalse%2C%22sale_of_data_region%22%3Afalse%7D; _tracking_consent=%7B%22con%22%3A%7B%22CMP%22%3A%7B%22m%22%3A%22%22%2C%22a%22%3A%22%22%2C%22p%22%3A%22%22%2C%22s%22%3A%22%22%7D%7D%2C%22lim%22%3A%5B%22CMP%22%5D%2C%22region%22%3A%22INKA%22%2C%22v%22%3A%222.1%22%2C%22reg%22%3A%22%22%7D; _shopify_y=5468668d-62ef-4e42-bb35-923c88c414a4; _shopify_s=3a551aaf-aece-4bcb-ab98-7a1ffd6210e9; _orig_referrer=; _landing_page=%2F; _shopify_sa_t=2024-02-23T04%3A07%3A22.742Z; _shopify_sa_p=; _ga_WCN3C8KG6R=GS1.1.1708660977.1.1.1708661285.42.0.0; _ga=GA1.1.1281374422.1708660978; _ga_Y41CDBPZ5C=GS1.1.1708660979.1.1.1708661285.0.0.0; _gcl_au=1.1.1793844992.1708660979.899084075.1708661100.1708661267; _shopify_essential=:AY3UIfYgAAH_fGqXNWDpCEsXQAW83yin1bRaquf-vWZ8cwMW5jufAihhPA3delBJJ4GFfnRWkwb0Ja8kuLtvacfekBoLUG-vxWQmNnYOPgcU:; _secure_session_id=ebf4a157b2e549616c23efd6de5b7d0e; _shopify_ga=undefined; cart=Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0pLWEpZSkRC; cart_ts=1708661285; cart_sig=c232e0647bacf9ed506bc5f879a71dbc; cart_currency=INR; checkout_session_token__cn__Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0pLWEpZSkRC=%7B%22token%22%3A%22Z3drY2pjNjdoY3JnaXRIZjJlRUo3c25uT1pETjYwcDhraFZmVXdLb250SjJSR1ZUdm5GNWdsakxJUCtDaFl1UGUyeEFTd3oxS3owaldMRXE5M3ZTOXFNblVTei9yMlprK1Rmc0NHbzJ0dnE4Uk4xbllmaXdRWXZjVDZIUm1CTHIwZkVQalVrUituTXBFYkYyUnVpTkh2dHZRTTU5YXNOdnlZckkvanRxeURvVG5NVXNJM05aZUFaUUpjR3Bua3NNNVNjVzVlWmxGczVZQSt4bzZ6T3ZFc3pFbUFsSjl3cjdmT1p1dkdUaUZqTVRTTVV3amNvMXVkV3NCOXRuL2k3eWZHd2E0cnNVVDRDZ2FXdElEZU1DL0FGWDBvK2ZnRlFMcHFlTHJRPT0tLTRGejJDc0c2eGkrQVBiYy8tLUZ5dlJxeDdUdTZVM2llNFdEdnhub1E9PQ%22%2C%22locale%22%3A%22en-IN%22%2C%22permanent_domain%22%3A%22tastynibbles.myshopify.com%22%2C%22checkout_session_identifier%22%3A%222815a1816db4a1b101a43a24d632cb56%22%2C%22cart_preview%22%3A%7B%22cart_ts%22%3A%221708661285%22%2C%22cart_sig%22%3A%22c232e0647bacf9ed506bc5f879a71dbc%22%2C%22is_dryrun%22%3Afalse%2C%22cart%22%3A%7B%22token%22%3A%22Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0pLWEpZSkRC%22%2C%22original_item_count%22%3A1%2C%22items%22%3A%5B%7B%22id%22%3A42201877151919%2C%22quantity%22%3A1%2C%22final_line_price%22%3A36000%2C%22product_title%22%3A%22Tender+Coconut+Water+200ml+%28Pack+of+6%29%22%2C%22variant_title%22%3Anull%2C%22featured_image%22%3A%7B%22alt%22%3A%22Tender+Coconut+Water+200ml+%28Pack+of+6%29%22%2C%22url%22%3A%22https%3A%5C%2F%5C%2Fcdn.shopify.com%5C%2Fs%5C%2Ffiles%5C%2F1%5C%2F0559%5C%2F2586%5C%2F6671%5C%2Fproducts%5C%2FPack6_7d34722d-2393-4144-bb70-ef8ba37f0c49.jpg%3Fv%3D1671702467%22%7D%7D%5D%2C%22currency%22%3A%22INR%22%2C%22had_truncated_line_items%22%3Afalse%7D%7D%7D; checkout_session_lookup=%7B%22version%22%3A1%2C%22keys%22%3A%5B%7B%22source_id%22%3A%22Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0pLWEpZSkRC%22%2C%22checkout_session_identifier%22%3A%222815a1816db4a1b101a43a24d632cb56%22%2C%22source_type_abbrev%22%3A%22cn%22%2C%22updated_at%22%3A%222024-02-23T04%3A08%3A05.599Z%22%7D%5D%7D; queue_token=AgVvJ9WpLDScCE9nhbeQZ6bD3CZO1XVz4SkmjqAMSsmajo9cauHtXMQYLO2tRMfO2pIJuu9BB6-RTGaG-0yKENPuFtzPsd8wCUo6ZrquL_Zi0W-GufybMca9jVefH8YTLl3MhUDiL0SPcz1Nztik_R-r_eo8BtbfMfD2TrL_VSde-zFlCtrCyxab
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+

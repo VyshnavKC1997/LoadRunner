@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Date: Fri, 23 Feb 2024 04:08:05 GMT
+Content-Type: text/html; encoding=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Language: en-IN
+Strict-Transport-Security: max-age=7889238
+Content-Security-Policy: block-all-mixed-content; upgrade-insecure-requests; frame-ancestors 'self' tastynibbles.myshopify.com admin.shopify.com; report-to /csp-report?source%5Bapp%5D=checkout_web_worker&source%5Bsection%5D=checkout&source%5Buuid%5D=859c9b0c7e85f421&source%5Baction%5D=fast_handler; report-uri /csp-report?source%5Bapp%5D=checkout_web_worker&source%5Bsection%5D=checkout&source%5Buuid%5D=859c9b0c7e85f421&source%5Baction%5D=fast_handler
+Timing-Allow-Origin: https://shop.app
+X-Content-Type-Options: nosniff
+X-Robots-Tag: none
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sXk2E4gsC21WRkmjC2Fhk5pnzSPShlrVYEGvZWZ8g%2BSuV6NfL6nvUe2tUrXiiNxDPEkUHeb5%2BDm37J%2BuNAeDOdJo%2FG6yIkD92D5VkQ7s5Bw0Gc60JQd8x5YDYQrbNdciCn1KNnk%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server-Timing: cfRequestDuration;dur=43.999910
+Server: cloudflare
+CF-RAY: 859c9b0c7e85f421-BOM
+Content-Encoding: br
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,13 @@
+[t70]
+FileName1=t70_account.htm
+URL1=https://www.tastynibbles.in/account
+Total=2
+ContentType=text/html
+SnapshotXmlFile=snapshot_70.xml
+RequestHeaderFile=t70_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t70_ResponseHeader.txt
+FileName2=t70_preloads.html
+URL2=https://www.tastynibbles.in/checkouts/internal/preloads.js?permanent-domain=tastynibbles.myshopify.com&locale=en-IN
+[ProtocolInfo]
+ProtocolId=QTWeb

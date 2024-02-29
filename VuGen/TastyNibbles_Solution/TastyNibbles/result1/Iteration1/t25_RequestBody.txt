@@ -1,0 +1,3 @@
+"{"metadata":{"event_sent_at_ms":1708661013021},"events":[{"schema_id":"trekkie_metrics/2.0","p"
+"ayload":{"metric_name":"navigation-PerformanceNavigationTiming-navigate","shop_id":55925866671"
+"},"metadata":{"event_created_at_ms":1708661013021}}]}"

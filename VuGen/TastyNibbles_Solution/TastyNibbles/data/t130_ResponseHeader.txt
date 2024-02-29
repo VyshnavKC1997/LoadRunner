@@ -1,0 +1,43 @@
+HTTP/1.1 200 OK
+Date: Fri, 23 Feb 2024 04:07:48 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Sorting-Hat-PodId: 174
+X-Sorting-Hat-ShopId: 55925866671
+X-Storefront-Renderer-Rendered: 1
+Set-Cookie: keep_alive=deb64252-5051-470f-81c5-7432ef2c3e4a; path=/; expires=Fri, 23 Feb 2024 04:37:48 GMT; HttpOnly; SameSite=Lax
+Set-Cookie: secure_customer_sig=236df76e736857a203847593810c4cf5; path=/; expires=Sun, 23 Feb 2025 04:07:48 GMT; secure; HttpOnly; SameSite=Lax
+Set-Cookie: localization=IN; path=/; expires=Sun, 23 Feb 2025 04:07:48 GMT; SameSite=Lax
+Set-Cookie: cart_currency=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax
+Set-Cookie: _cmp_a=%7B%22purposes%22%3A%7B%22a%22%3Atrue%2C%22p%22%3Atrue%2C%22m%22%3Atrue%2C%22t%22%3Atrue%7D%2C%22display_banner%22%3Afalse%2C%22sale_of_data_region%22%3Afalse%7D; domain=tastynibbles.in; path=/; expires=Sat, 24 Feb 2024 04:07:48 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=5468668d-62ef-4e42-bb35-923c88c414a4; Expires=Sat, 22-Feb-25 04:07:48 GMT; Domain=tastynibbles.in; Path=/; SameSite=Lax
+Set-Cookie: _shopify_s=3a551aaf-aece-4bcb-ab98-7a1ffd6210e9; Expires=Fri, 23-Feb-24 04:37:48 GMT; Domain=tastynibbles.in; Path=/; SameSite=Lax
+Link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin
+ETag: W/"cacheable:aba028c9f4cfea4f8538699634cd6044"
+X-Cache: miss
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+Strict-Transport-Security: max-age=7889238
+X-ShopId: 55925866671
+X-ShardId: 174
+Vary: Accept
+Content-Language: en-IN
+powered-by: Shopify
+Server-Timing: processing;dur=165, db;dur=37, edge_cart;desc="count=1";dur=1.84, fetch;dur=85, render;dur=4, wasm, wasmDownload;dur=85, asn;desc="10029", edge;desc="BOM", country;desc="IN", theme;desc="130040463535", pageType;desc="cart", servedBy;desc="t5mw", requestID;desc="c9ddd057-2406-400c-be9b-aa359fea5de2"
+X-Shopify-Stage: production
+X-Dc: gcp-asia-south1,gcp-us-central1,gcp-us-central1
+X-Request-ID: c9ddd057-2406-400c-be9b-aa359fea5de2
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gUHoAO6LpNG4%2F9pXXuh0618eOh8MPeVv8430CMaE2ciuigNCauxjzYHJH6AR2FbdPO56ibG2RuYh%2F6cjyS9AvMfyqHrLTqOc%2B1FWGZXi2AxSTZi8xkFHg79v2g5n7OqUw%2Br337s%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Server-Timing: cfRequestDuration;dur=460.000038
+Server: cloudflare
+CF-RAY: 859c9a9d1980f323-BOM
+Content-Encoding: br
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,16 @@
+[t113]
+SnapshotXmlFile=snapshot_110.xml
+ContentType=DummyContentType
+StepName=Url: tasty-nibbles-tender-coconut-water-200ml-pack-of-6_3
+Total=2
+FileName1=t113.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t113_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t113_ResponseHeader.txt
+RawStepEndTime=1708665639872
+RawStepName=tasty-nibbles-tender-coconut-water-200ml-pack-of-6_3
+RequestBodyFile=t113_RequestBody.txt
+RawStepStartTime=1708665639813
+URL1=https://www.tastynibbles.in/wpm@3698dd31wbfa453bap448c3218md5149de6/web-pixel-shopify-custom-pixel@0575/sandbox/modern/products/tasty-nibbles-tender-coconut-water-200ml-pack-of-6?_pos=4&_sid=6b1a92cec&_ss=r
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

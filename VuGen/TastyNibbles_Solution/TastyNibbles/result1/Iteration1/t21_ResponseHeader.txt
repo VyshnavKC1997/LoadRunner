@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Fri, 23 Feb 2024 05:20:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+cache-control: nocache, no-store, max-age=0, must-revalidate
+content-encoding: gzip
+expires: Fri, 01 Jan 1990 00:00:00 GMT
+mode: live
+pragma: no-cache
+request-id: cnc2m049n8v8lghquqqg
+strict-transport-security: max-age=315360000; includeSubDomains
+vary: Accept-Encoding
+via: rws
+x-checkout-service-proxy: checkout-service
+x-client-ip: 203.92.61.72
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+

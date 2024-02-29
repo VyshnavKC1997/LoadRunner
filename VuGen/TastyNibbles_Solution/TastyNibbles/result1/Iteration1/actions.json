@@ -1,0 +1,200 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: wbanner",
+                "infFile": "t10.inf",
+                "time": 1708665596386
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: location_status",
+                "infFile": "t11.inf",
+                "time": 1708665597388
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: configs",
+                "infFile": "t14.inf",
+                "time": 1708665598716
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: products.json",
+                "infFile": "t15.inf",
+                "time": 1708665598925
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: products.json_2",
+                "infFile": "t16.inf",
+                "time": 1708665599087
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: products.json_3",
+                "infFile": "t17.inf",
+                "time": 1708665599277
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: public",
+                "infFile": "t19.inf",
+                "time": 1708665599822
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: configs_2",
+                "infFile": "t20.inf",
+                "time": 1708665599904
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: preferences",
+                "infFile": "t21.inf",
+                "time": 1708665600043
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: public_2",
+                "infFile": "t34.inf",
+                "time": 1708665604967
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: configs_3",
+                "infFile": "t35.inf",
+                "time": 1708665606022
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: products.json_4",
+                "infFile": "t36.inf",
+                "time": 1708665606207
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: products.json_5",
+                "infFile": "t37.inf",
+                "time": 1708665606401
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: products.json_6",
+                "infFile": "t38.inf",
+                "time": 1708665606566
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Submit Data: configs_4",
+                "infFile": "t50.inf",
+                "time": 1708665612168
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: public_3",
+                "infFile": "t52.inf",
+                "time": 1708665612563
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Submit Data: configs_5",
+                "infFile": "t63.inf",
+                "time": 1708665618695
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: public_4",
+                "infFile": "t64.inf",
+                "time": 1708665618940
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: products.json_7",
+                "infFile": "t68.inf",
+                "time": 1708665620727
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: products.json_8",
+                "infFile": "t69.inf",
+                "time": 1708665621349
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: products.json_9",
+                "infFile": "t70.inf",
+                "time": 1708665621743
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Submit Data: configs_6",
+                "infFile": "t83.inf",
+                "time": 1708665627815
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Url: public_5",
+                "infFile": "t84.inf",
+                "time": 1708665628024
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Submit Data: configs_7",
+                "infFile": "t101.inf",
+                "time": 1708665634896
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: public_6",
+                "infFile": "t102.inf",
+                "time": 1708665635224
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: public_7",
+                "infFile": "t123.inf",
+                "time": 1708665643197
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Submit Data: configs_8",
+                "infFile": "t124.inf",
+                "time": 1708665644916
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Submit Data: add.js",
+                "infFile": "t126.inf",
+                "time": 1708665645932
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Custom Request: campaigns",
+                "infFile": "t133.inf",
+                "time": 1708665650017
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Url: checkout",
+                "infFile": "t135.inf",
+                "time": 1708665653343
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Custom Request: graphql",
+                "infFile": "t137.inf",
+                "time": 1708665654314
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Custom Request: graphql_2",
+                "infFile": "t143.inf",
+                "time": 1708665657267
+            }
+        ],
+        "transactions": []
+    }
+]

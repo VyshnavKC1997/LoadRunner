@@ -1,0 +1,16 @@
+[t30]
+SnapshotXmlFile=snapshot_29.xml
+ContentType=DummyContentType
+StepName=Url: cart_2
+Total=2
+FileName1=t30.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t30_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t30_ResponseHeader.txt
+RawStepEndTime=1708665603745
+RawStepName=cart_2
+RequestBodyFile=t30_RequestBody.txt
+RawStepStartTime=1708665603615
+URL1=https://www.tastynibbles.in/cart?t=1708661013422&view=ajax
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

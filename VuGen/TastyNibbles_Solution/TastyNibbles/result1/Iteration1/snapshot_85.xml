@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="85">
+  <HTTPTask id="94" url="https://www.tastynibbles.in/search/suggest.json?q=coco&amp;resources[type]=product%2Carticle&amp;resources[limit]=4&amp;resources[options][unavailable_products]=last&amp;resources[options][fields]=title%2Cproduct_type%2Cvariants.title%2Cvendor" origin="Primary" startDateTime="2024-02-23T10:50:28.463+05:30" startTime="38137">
+    <HTTPRequest method="GET" />
+  </HTTPTask>
+</HTTPSnapshot>

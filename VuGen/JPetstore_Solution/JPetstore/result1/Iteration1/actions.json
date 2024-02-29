@@ -1,0 +1,32 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: Catalog.action",
+                "infFile": "t2.inf",
+                "time": 1708678404652
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Form: Catalog.action;jsessionid=7036C49D7EEA6AD8351144C7679B0D92",
+                "infFile": "t3.inf",
+                "time": 1708678405418
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Link: Fresh Water fish from China",
+                "infFile": "t5.inf",
+                "time": 1708678405793
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Link: Add to Cart",
+                "infFile": "t6.inf",
+                "time": 1708678406057
+            }
+        ],
+        "transactions": []
+    }
+]

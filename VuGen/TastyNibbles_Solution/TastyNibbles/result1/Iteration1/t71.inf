@@ -1,0 +1,16 @@
+[t71]
+SnapshotXmlFile=snapshot_70.xml
+ContentType=DummyContentType
+StepName=Url: account_3
+Total=2
+FileName1=t71.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t71_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t71_ResponseHeader.txt
+RawStepEndTime=1708665622992
+RawStepName=account_3
+RequestBodyFile=t71_RequestBody.txt
+RawStepStartTime=1708665621784
+URL1=https://www.tastynibbles.in/account/login?return_url=/account
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

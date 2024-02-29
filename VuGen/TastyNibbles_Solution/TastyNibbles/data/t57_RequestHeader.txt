@@ -1,0 +1,17 @@
+POST /v1/track HTTP/1.1
+Host: lumberjack.razorpay.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 712
+Origin: https://www.tastynibbles.in
+DNT: 1
+Sec-GPC: 1
+Connection: keep-alive
+Referer: https://www.tastynibbles.in/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: cross-site
+

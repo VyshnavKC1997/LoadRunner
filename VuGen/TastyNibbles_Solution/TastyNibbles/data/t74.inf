@@ -1,0 +1,11 @@
+[t74]
+FileName1=t74.html
+URL1=https://lumberjack.razorpay.com/v1/track
+Total=1
+RequestHeaderFile=t74_RequestHeader.txt
+RequestBodyFile=t74_RequestBody.txt
+ResponseHeaderFile=t74_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_74.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

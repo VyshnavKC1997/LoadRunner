@@ -1,0 +1,13 @@
+[t108]
+FileName1=t108_tasty-nibbles-tender-coconut-water-200ml-pack-of-6.htm
+URL1=https://www.tastynibbles.in/products/tasty-nibbles-tender-coconut-water-200ml-pack-of-6?_pos=4&_sid=6b1a92cec&_ss=r
+Total=2
+ContentType=text/html
+SnapshotXmlFile=snapshot_108.xml
+RequestHeaderFile=t108_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t108_ResponseHeader.txt
+FileName2=t108_preloads.html
+URL2=https://www.tastynibbles.in/checkouts/internal/preloads.js?permanent-domain=tastynibbles.myshopify.com&locale=en-IN
+[ProtocolInfo]
+ProtocolId=QTWeb

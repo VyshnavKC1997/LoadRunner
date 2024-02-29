@@ -1,0 +1,7 @@
+"{\"metadata\":{\"event_sent_at_ms\":1708661285872},\"events\":[{\"schema_id\":\"web_pixels_man"
+"ager_unload/1.2\",\"payload\":{\"version\":\"0.0.444\",\"bundle_target\":\"modern\",\"page_url"
+"\":\"https://www.tastynibbles.in/products/tasty-nibbles-tender-coconut-water-200ml-pack-of-6?_"
+"pos=4&_sid=6b1a92cec&_ss=r\",\"shop_id\":55925866671,\"surface\":\"storefront-renderer\",\"is_"
+"completed\":\"true\",\"runtime_error_caught\":\"false\",\"user_can_be_tracked\":\"true\",\"ses"
+"sion_id\":\"56f07702-2b58-4afd-889f-1d605c04a7be\",\"run_time_duration\":857,\"start_time\":10"
+"87,\"page_duration\":43303},\"metadata\":{\"event_created_at_ms\":1708661285872}}]}"

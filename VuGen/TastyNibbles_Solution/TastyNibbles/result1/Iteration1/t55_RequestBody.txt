@@ -1,0 +1,2 @@
+"form_type=create_customer&utf8=%E2%9C%93&customer%5Bfirst_name%5D=Brunda&customer%5Blast_name%"
+"5D=M&customer%5Bemail%5D=brunda123%40gmail.com&customer%5Bpassword%5D=Brunda%40123"

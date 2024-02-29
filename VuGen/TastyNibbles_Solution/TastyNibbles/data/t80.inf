@@ -1,0 +1,13 @@
+[t80]
+FileName1=t80.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/unstable/produce_batch
+Total=2
+RequestHeaderFile=t80_RequestHeader.txt
+RequestBodyFile=t80_RequestBody.txt
+ResponseHeaderFile=t80_ResponseHeader.txt
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_80.xml
+FileName2=t80_magic-checkout.html
+URL2=https://checkout.razorpay.com/v1/magic-checkout.js
+[ProtocolInfo]
+ProtocolId=QTWeb

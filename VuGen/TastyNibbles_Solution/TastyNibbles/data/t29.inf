@@ -1,0 +1,13 @@
+[t29]
+FileName1=t29_cart.htm
+URL1=https://www.tastynibbles.in/cart?t=1708661013422&view=ajax
+Total=2
+ContentType=text/html
+SnapshotXmlFile=snapshot_29.xml
+RequestHeaderFile=t29_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t29_ResponseHeader.txt
+FileName2=t29_cart.html
+URL2=https://www.tastynibbles.in/cart.js?discos=true
+[ProtocolInfo]
+ProtocolId=QTWeb

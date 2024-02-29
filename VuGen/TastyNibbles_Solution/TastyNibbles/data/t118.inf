@@ -1,0 +1,13 @@
+[t118]
+FileName1=t118.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/unstable/produce_batch
+Total=2
+RequestHeaderFile=t118_RequestHeader.txt
+RequestBodyFile=t118_RequestBody.txt
+ResponseHeaderFile=t118_ResponseHeader.txt
+ContentType=image/webp
+SnapshotXmlFile=snapshot_118.xml
+FileName2=t118_Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_120x.webp
+URL2=https://www.tastynibbles.in/cdn/shop/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_120x.jpg?v=1671702467
+[ProtocolInfo]
+ProtocolId=QTWeb

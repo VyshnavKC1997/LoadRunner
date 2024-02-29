@@ -1,0 +1,7 @@
+"{"metadata":{"event_sent_at_ms":1708661242247},"events":[{"schema_id":"web_pixels_manager_unlo"
+"ad/1.2","payload":{"version":"0.0.444","bundle_target":"modern","page_url":"https://www.tastyn"
+"ibbles.in/search?type=product%2Carticle&options[prefix]=last&q=Coconut%20water*","shop_id":559"
+"25866671,"surface":"storefront-renderer","is_completed":"true","runtime_error_caught":"false","
+""user_can_be_tracked":"true","session_id":"7b563107-6a0f-42c1-97c3-aafe389c2549","run_time_dur"
+"ation":323,"start_time":1543,"page_duration":37924},"metadata":{"event_created_at_ms":17086612"
+"42247}}]}"

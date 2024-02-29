@@ -1,0 +1,6 @@
+"{"metadata":{"event_sent_at_ms":1708661012563},"events":[{"schema_id":"web_pixels_manager_unlo"
+"ad/1.2","payload":{"version":"0.0.444","bundle_target":"modern","page_url":"https://www.tastyn"
+"ibbles.in/","shop_id":55925866671,"surface":"storefront-renderer","is_completed":"true","runti"
+"me_error_caught":"false","user_can_be_tracked":"true","session_id":"c3cba3ec-c601-4412-a305-27"
+"ff9673c789","run_time_duration":9398,"start_time":2308,"page_duration":42078},"metadata":{"eve"
+"nt_created_at_ms":1708661012563}}]}"

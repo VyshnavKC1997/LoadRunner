@@ -1,0 +1,13 @@
+[t7]
+SnapshotXmlFile=snapshot_7.xml
+ContentType=DummyContentType
+StepName=Custom Request: produce_batch_5
+Total=1
+FileName1=t7.UNK
+RequestHeaderFile=t7_RequestHeader.txt
+ResponseHeaderFile=t7_ResponseHeader.txt
+RawStepEndTime=1708665594675
+RawStepName=produce_batch_5
+RequestBodyFile=t7_RequestBody.txt
+RawStepStartTime=1708665594321
+URL1=file:

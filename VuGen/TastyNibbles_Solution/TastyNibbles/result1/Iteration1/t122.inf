@@ -1,0 +1,16 @@
+[t122]
+SnapshotXmlFile=snapshot_119.xml
+ContentType=DummyContentType
+StepName=Custom Request: track_14
+Total=2
+FileName1=t122.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t122_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t122_ResponseHeader.txt
+RawStepEndTime=1708665642870
+RawStepName=track_14
+RequestBodyFile=t122_RequestBody.txt
+RawStepStartTime=1708665642823
+URL1=file:
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

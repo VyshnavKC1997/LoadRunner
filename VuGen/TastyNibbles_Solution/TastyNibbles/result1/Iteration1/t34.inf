@@ -1,0 +1,16 @@
+[t34]
+SnapshotXmlFile=snapshot_33.xml
+ContentType=text/html
+StepName=Url: public_2
+Total=2
+FileName1=t34.html
+FileName2=t19_1_css2.css
+RequestHeaderFile=t34_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t34_ResponseHeader.txt
+RawStepEndTime=1708665604947
+RawStepName=public_2
+RequestBodyFile=t34_RequestBody.txt
+RawStepStartTime=1708665604691
+URL1=https://api.razorpay.com/v1/checkout/public?traffic_env=production&build=c5263b5e5d10b84ea8625c0bd8234ed5ee57d39d&modern=1&unified_lite=1&magic_script=1&merchant_key=rzp_live_UiTUCACnTlsjdB&magic_shopify_key=rzp_live_UiTUCACnTlsjdB&mode=live&session_token=95B37C9E3FF05941226711E16FC2C420898CF5F8DEC6246FF60A42C4434D32CEDB594A4CF358CCB916889871823C1141907EB4A86B52841A53367658EBA2B4924FDB323C0F314046DE718E66941BCC1440F3CB6740E907A2B11F9349E0BD69380E2E591DC345883E0E84A29489284433F3D146979E8EE3CB88C9A5306AD838FD28D582C74644CC325986FEA4C9B4BC8CCA468A
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

@@ -1,0 +1,9 @@
+[t8]
+FileName1=t8.html
+URL1=https://thinking-tester-contact-list.herokuapp.com/contactList
+Total=1
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t8_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_8.xml

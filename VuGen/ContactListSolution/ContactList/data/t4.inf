@@ -1,0 +1,13 @@
+[t4]
+FileName1=t4.json
+URL1=https://update.googleapis.com/service/update2/json?cup2key=13:PRj5vEswT4mYGcB546wZkaEbPgpAs_qDkM680owUvU4&cup2hreq=139e834367f9bfd220912e7c7a562e553919c896cca134b83a08db4fc10d0f95
+Total=2
+RequestHeaderFile=t4_RequestHeader.txt
+RequestBodyFile=t4_RequestBody.txt
+ResponseHeaderFile=t4_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_4.xml
+FileName2=t4_contactList.html
+URL2=https://thinking-tester-contact-list.herokuapp.com/js/contactList.js
+[ProtocolInfo]
+ProtocolId=QTWeb

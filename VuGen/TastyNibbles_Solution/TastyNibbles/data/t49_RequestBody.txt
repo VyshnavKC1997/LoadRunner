@@ -1,0 +1,1 @@
+"customer_info=null&customer_location=null&promotion_url="

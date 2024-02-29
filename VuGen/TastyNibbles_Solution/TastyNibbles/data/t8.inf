@@ -1,0 +1,15 @@
+[t8]
+FileName1=t8.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/unstable/produce_batch
+Total=3
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=t8_RequestBody.txt
+ResponseHeaderFile=t8_ResponseHeader.txt
+ContentType=image/webp
+SnapshotXmlFile=snapshot_8.xml
+FileName2=t8_Web-Banner-Chicken_900x.webp
+URL2=https://www.tastynibbles.in/cdn/shop/files/Web-Banner-Chicken_900x.jpg?v=1704434101
+FileName3=t8_New_launch_900x.webp
+URL3=https://www.tastynibbles.in/cdn/shop/files/New_launch_900x.jpg?v=1704434676
+[ProtocolInfo]
+ProtocolId=QTWeb

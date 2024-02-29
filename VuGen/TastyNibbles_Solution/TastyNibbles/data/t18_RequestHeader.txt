@@ -1,0 +1,15 @@
+GET /v1/checkout/public?traffic_env=production&build=c5263b5e5d10b84ea8625c0bd8234ed5ee57d39d&modern=1&unified_lite=1&magic_script=1&merchant_key=rzp_live_UiTUCACnTlsjdB&magic_shopify_key=rzp_live_UiTUCACnTlsjdB&mode=live HTTP/1.1
+Host: api.razorpay.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Sec-GPC: 1
+Connection: keep-alive
+Referer: https://www.tastynibbles.in/
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: iframe
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+

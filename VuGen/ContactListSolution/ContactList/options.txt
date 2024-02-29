@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\LoadRunner\ContactList_Solution\ContactList
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ed:\loadrunner\contactlist_solution\contactlist\\logfile.log
+d:\loadrunner\contactlist_solution\contactlist\\combined_ContactList.c
+d:\loadrunner\contactlist_solution\contactlist\\pre_cci.c

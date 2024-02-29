@@ -1,0 +1,16 @@
+[t83]
+SnapshotXmlFile=snapshot_82.xml
+ContentType=application/json
+StepName=Submit Data: configs_6
+Total=2
+FileName1=t83.json
+FileName2=t19_1_css2.css
+RequestHeaderFile=t83_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t83_ResponseHeader.txt
+RawStepEndTime=1708665627794
+RawStepName=configs_6
+RequestBodyFile=t83_RequestBody.txt
+RawStepStartTime=1708665626569
+URL1=https://www.tastynibbles.in/apps/discos/configs?shop=tastynibbles.myshopify.com
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

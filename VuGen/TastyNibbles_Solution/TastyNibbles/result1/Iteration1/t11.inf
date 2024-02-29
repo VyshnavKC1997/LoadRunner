@@ -1,0 +1,13 @@
+[t11]
+SnapshotXmlFile=snapshot_11.xml
+ContentType=application/json
+StepName=Url: location_status
+Total=1
+FileName1=t11.json
+RequestHeaderFile=t11_RequestHeader.txt
+ResponseHeaderFile=t11_ResponseHeader.txt
+RawStepEndTime=1708665597371
+RawStepName=location_status
+RequestBodyFile=t11_RequestBody.txt
+RawStepStartTime=1708665596392
+URL1=https://www.tastynibbles.in/apps/discos/location_status?shop=tastynibbles.myshopify.com

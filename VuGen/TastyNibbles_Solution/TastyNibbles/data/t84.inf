@@ -1,0 +1,15 @@
+[t84]
+FileName1=t84.html
+URL1=https://www.tastynibbles.in/.well-known/shopify/monorail/v1/produce
+Total=3
+RequestHeaderFile=t84_RequestHeader.txt
+RequestBodyFile=t84_RequestBody.txt
+ResponseHeaderFile=t84_ResponseHeader.txt
+ContentType=text/javascript
+SnapshotXmlFile=snapshot_84.xml
+FileName2=t84_cart.html
+URL2=https://www.tastynibbles.in/cart.js
+FileName3=t84_cart.html
+URL3=https://www.tastynibbles.in/cart.js?_=1708661140855
+[ProtocolInfo]
+ProtocolId=QTWeb

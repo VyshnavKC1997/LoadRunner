@@ -1,0 +1,42 @@
+HTTP/1.1 200 OK
+Date: Fri, 23 Feb 2024 04:07:47 GMT
+Content-Type: text/javascript; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Sorting-Hat-PodId: 174
+X-Sorting-Hat-ShopId: 55925866671
+Vary: Accept-Encoding
+x-frame-options: DENY
+x-shopid: 55925866671
+x-shardid: 174
+content-language: en-IN
+x-liquid-rendered-at: 2024-02-23T04:07:47.420709091Z
+strict-transport-security: max-age=7889238
+cache-control: no-cache, no-store
+set-cookie: cart=Z2NwLXVzLWNlbnRyYWwxOjAxSFFBMkJQVDlOUzZDOEcwS0pLWEpZSkRC; path=/; expires=Fri, 08 Mar 2024 04:07:47 GMT; SameSite=Lax
+Set-Cookie: cart_ts=1708661267; path=/; expires=Fri, 08 Mar 2024 04:07:47 GMT; HttpOnly; SameSite=Lax
+Set-Cookie: cart_sig=635b9add448d6c38f27e74b5f1b9e82a; path=/; expires=Fri, 08 Mar 2024 04:07:47 GMT; HttpOnly; SameSite=Lax
+Set-Cookie: cart_currency=INR; path=/; expires=Fri, 08 Mar 2024 04:07:47 GMT; SameSite=Lax
+Set-Cookie: secure_customer_sig=236df76e736857a203847593810c4cf5; path=/; expires=Sun, 23 Feb 2025 04:07:47 GMT; secure; HttpOnly; SameSite=Lax
+Set-Cookie: _cmp_a=%7B%22purposes%22%3A%7B%22a%22%3Atrue%2C%22p%22%3Atrue%2C%22m%22%3Atrue%2C%22t%22%3Atrue%7D%2C%22display_banner%22%3Afalse%2C%22sale_of_data_region%22%3Afalse%7D; domain=tastynibbles.in; path=/; expires=Sat, 24 Feb 2024 04:07:47 GMT; SameSite=Lax
+Set-Cookie: _shopify_y=5468668d-62ef-4e42-bb35-923c88c414a4; Expires=Sat, 22-Feb-25 04:07:47 GMT; Domain=tastynibbles.in; Path=/; SameSite=Lax
+Set-Cookie: _shopify_s=3a551aaf-aece-4bcb-ab98-7a1ffd6210e9; Expires=Fri, 23-Feb-24 04:37:47 GMT; Domain=tastynibbles.in; Path=/; SameSite=Lax
+server-timing: processing;dur=414, edge_cart;desc="count=2";dur=15.08
+x-shopify-stage: production
+content-security-policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=add&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fcart&source%5Bsection%5D=storefront&source%5Buuid%5D=05abc86b-d832-4357-b1fa-35b931f24b02
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+x-xss-protection: 1; mode=block; report=/xss-report?source%5Baction%5D=add&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fcart&source%5Bsection%5D=storefront&source%5Buuid%5D=05abc86b-d832-4357-b1fa-35b931f24b02
+x-envoy-upstream-service-time: 416
+X-Dc: gcp-asia-south1,gcp-us-central1
+X-Request-ID: 05abc86b-d832-4357-b1fa-35b931f24b02
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fIbM7rCEXXtOVRU8IBPEhcxg4%2Bq%2FYjs3eUvDNYlGI3RMMQnWZ6ieN3BwYySqmrP%2FgX5Ztn6YhoKnfjpfsZLm1S9wbnyF3pACfcavE0hSCmEmffAZHUWW%2BYpArlJraVl4vCBRNYM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Server-Timing: cfRequestDuration;dur=689.000130
+Server: cloudflare
+CF-RAY: 859c9a976e0ff421-BOM
+Content-Encoding: br
+alt-svc: h3=":443"; ma=86400
+

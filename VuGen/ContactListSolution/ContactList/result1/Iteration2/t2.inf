@@ -1,0 +1,24 @@
+[t2]
+FileName2=t6_8_addContact.UNK
+RawStepEndTime=1708596602176
+FileName5=t1_1_login.UNK
+FileName4=t8_11_thinkingTesterLogo.UNK
+FileName6=t8_9_styles.UNK
+RequestBodyFile=t2_RequestBody.txt
+RawStepName=login
+ContentType=application/json
+URL1=https://thinking-tester-contact-list.herokuapp.com/users/login
+URL2=https://thinking-tester-contact-list.herokuapp.com/js/addContact.js
+URL3=https://thinking-tester-contact-list.herokuapp.com/js/contactList.js
+ResponseHeaderFile=t2_ResponseHeader.txt
+URL4=https://thinking-tester-contact-list.herokuapp.com/img/thinkingTesterLogo.png
+URL5=https://thinking-tester-contact-list.herokuapp.com/js/login.js
+URL6=https://thinking-tester-contact-list.herokuapp.com/css/styles.css
+SnapshotXmlFile=snapshot_1.xml
+RequestHeaderFile=t2_RequestHeader.txt
+SaveSnapshotResources=1
+RawStepStartTime=1708596601070
+Total=6
+StepName=Custom Request: login
+FileName1=t2.json
+FileName3=t8_10_contactList.UNK

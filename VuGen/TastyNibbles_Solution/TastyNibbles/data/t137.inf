@@ -1,0 +1,13 @@
+[t137]
+FileName1=t137.json
+URL1=https://www.tastynibbles.in/checkouts/unstable/graphql
+Total=2
+RequestHeaderFile=t137_RequestHeader.txt
+RequestBodyFile=t137_RequestBody.txt
+ResponseHeaderFile=t137_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_137.xml
+FileName2=t137_worker.modern.html
+URL2=https://www.tastynibbles.in/wpm@3698dd31wbfa453bap448c3218md5149de6/web-pixel-shopify-app-pixel@0574/sandbox/worker.modern.js
+[ProtocolInfo]
+ProtocolId=QTWeb

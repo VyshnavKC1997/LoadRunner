@@ -1,0 +1,16 @@
+[t20]
+SnapshotXmlFile=snapshot_19.xml
+ContentType=application/json
+StepName=Url: configs_2
+Total=2
+FileName1=t20.json
+FileName2=t19_1_css2.css
+RequestHeaderFile=t20_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t20_ResponseHeader.txt
+RawStepEndTime=1708665599883
+RawStepName=configs_2
+RequestBodyFile=t20_RequestBody.txt
+RawStepStartTime=1708665599828
+URL1=https://api.razorpay.com/v1/magic/analytics/configs?key_id=rzp_live_UiTUCACnTlsjdB
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

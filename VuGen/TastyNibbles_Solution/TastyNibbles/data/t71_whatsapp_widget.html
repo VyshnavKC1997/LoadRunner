@@ -1,0 +1,426 @@
+var webBotPosition,
+  phoneNumber,
+  prefilledMsg,
+  whatsAppWidgetPosition,
+  updatedWidgetScript,
+  isWebBotDeployed,
+  customCSSLink,
+  urlParamsConfig;
+
+var whatsAppWidgetScript = `<span id="whatsAppWidgetSpan">
+    <div>
+          <div
+          id="popupBox"
+          style="display: none; margin-bottom: 8px;"
+        >
+          <span id="crossBtn" 
+          style="margin-left: 180px;
+          cursor: pointer;
+          position: fixed;
+          bottom: __CROSS_BTN_POSITIONING__;
+          __CROSS_BTN_POSITION__: 15px;
+          z-index: 100;">
+            <svg
+              width="72"
+              height="52"
+              viewBox="0 0 32 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_8313_12351)">
+                <rect
+                  x="24"
+                  y="24"
+                  width="24"
+                  height="24"
+                  rx="12"
+                  fill="white"
+                />
+                <path
+                  d="M40 32L32 40"
+                  stroke="#403F42"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M32 32L40 40"
+                  stroke="#403F42"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_8313_12351"
+                  x="0"
+                  y="0"
+                  width="72"
+                  height="72"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset />
+                  <feGaussianBlur stdDeviation="12" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.25098 0 0 0 0 0.247059 0 0 0 0 0.258824 0 0 0 0.12 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_8313_12351"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_8313_12351"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </span>
+          <div
+          id="waPopupBox"
+            style="
+              height: 160px;
+              background-color: #ffffff;
+              box-shadow: 0px 0px 24px rgba(64, 63, 66, 0.12);
+              border-radius: 8px 8px 0px 8px;
+              padding: 16px 24px 0px 24px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              box-sizing: initial;
+              text-align: left;
+              position: fixed;
+              bottom: __POPUP_BOTTOM_POSITIONING__;
+              __POPUP_POSITION__: 15px;
+              z-index: 100;
+            "
+          >
+            <div id="waPopupBoxHeading">
+              <b style="font-size: 14px; font-family: sans-serif">Hi,</b>
+              <span
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.16287 4.05155C2.58114 3.75921 3.21165 3.81528 3.5872 4.12541L3.15647 3.49935C2.80985 3.005 2.93399 2.47015 3.42879 2.12308C3.92359 1.77734 5.32567 2.70687 5.32567 2.70687C4.97593 2.20762 5.04134 1.57488 5.54059 1.2247C6.03984 0.875846 6.72864 0.996431 7.07838 1.49657L11.7149 8.04643L11.124 13.7753L6.19246 11.9768L1.891 5.59913C1.53814 5.09677 1.66006 4.40396 2.16287 4.05155Z"
+                    fill="#EF9645"
+                  />
+                  <path
+                    d="M1.19921 7.69489C1.19921 7.69489 0.695509 6.9607 1.43014 6.45745C2.16389 5.95419 2.66714 6.68794 2.66714 6.68794L5.00365 10.0955C5.08418 9.96109 5.17229 9.82849 5.27062 9.69767L2.02773 4.96904C2.02773 4.96904 1.52448 4.2353 2.25867 3.73204C2.99241 3.22879 3.49566 3.96253 3.49566 3.96253L6.54589 8.41084C6.65936 8.31828 6.77549 8.22529 6.89519 8.13407L3.35906 2.9765C3.35906 2.9765 2.85581 2.24275 3.59 1.7395C4.32374 1.23624 4.827 1.96999 4.827 1.96999L8.36312 7.12667C8.49305 7.04702 8.62164 6.97805 8.75068 6.90508L5.44549 2.08523C5.44549 2.08523 4.94224 1.35149 5.67599 0.848235C6.40973 0.344981 6.91298 1.07873 6.91298 1.07873L10.4077 6.17534L10.939 6.95046C8.73734 8.46067 8.52776 11.3018 9.78567 13.1363C10.0371 13.5034 10.4042 13.252 10.4042 13.252C8.89441 11.0499 9.35539 8.57547 11.5575 7.06571L10.9083 3.81659C10.9083 3.81659 10.6658 2.96048 11.5215 2.71753C12.3776 2.47502 12.6205 3.33113 12.6205 3.33113L13.3703 5.55773C13.6675 6.44054 13.9839 7.32023 14.4026 8.15231C15.5849 10.5017 14.8787 13.4216 12.6495 14.9509C10.2177 16.6182 6.89341 15.9984 5.22568 13.5671L1.19921 7.69489Z"
+                    fill="#FFDC5D"
+                  />
+                  <path
+                    d="M5.33966 14.2382C3.55981 14.2382 1.76127 12.4397 1.76127 10.6598C1.76127 10.4137 1.58105 10.2148 1.33499 10.2148C1.08893 10.2148 0.871338 10.4137 0.871338 10.6598C0.871338 13.3296 2.66988 15.1281 5.33966 15.1281C5.58573 15.1281 5.78463 14.9105 5.78463 14.6645C5.78463 14.4184 5.58573 14.2382 5.33966 14.2382Z"
+                    fill="#5DADEC"
+                  />
+                  <path
+                    d="M3.11475 15.1099C1.77985 15.1099 0.889927 14.22 0.889927 12.8851C0.889927 12.639 0.691028 12.4401 0.444964 12.4401C0.198899 12.4401 0 12.639 0 12.8851C0 14.665 1.33489 15.9999 3.11475 15.9999C3.36081 15.9999 3.55971 15.801 3.55971 15.5549C3.55971 15.3088 3.36081 15.1099 3.11475 15.1099ZM10.6791 0.871094C10.4335 0.871094 10.2342 1.07044 10.2342 1.31606C10.2342 1.56168 10.4335 1.76102 10.6791 1.76102C12.459 1.76102 14.2388 3.358 14.2388 5.32073C14.2388 5.56635 14.4382 5.76569 14.6838 5.76569C14.9294 5.76569 15.1288 5.56635 15.1288 5.32073C15.1288 2.8672 13.3489 0.871094 10.6791 0.871094Z"
+                    fill="#5DADEC"
+                  />
+                  <path
+                    d="M12.9039 0C12.6583 0 12.459 0.180655 12.459 0.426275C12.459 0.671895 12.6583 0.889927 12.9039 0.889927C14.2388 0.889927 15.1101 1.87997 15.1101 3.09606C15.1101 3.34168 15.3277 3.54102 15.5737 3.54102C15.8198 3.54102 16 3.34168 16 3.09606C16 1.38873 14.6838 0 12.9039 0Z"
+                    fill="#5DADEC"
+                  />
+                </svg>
+              </span>
+            </div>
+    
+            <p
+            id="waPopupBoxBody"
+              style="
+                font-size: 12px;
+                line-height: 16px;
+                color: #403f42;
+                width: 179px;
+                height: 48px;
+                margin: 8px 0px 8px 0px;
+                font-family: sans-serif;
+              "
+            >
+              Greetings for the day! We are here to help you. Contact us for any
+              support.
+            </p>
+            <a
+              id="startBtn"
+              href=__WHATSAPP_LINK__
+              target="_blank"
+              style="
+                width: 179px;
+                height: 28px;
+                background-color: #44c654;
+                border-radius: 8px;
+                border: none;
+                margin-bottom: 3px;
+                margin-top: 5px;
+                color: #ffffff;
+                cursor: pointer;
+                padding: 6px !important;
+                font-size: 12px;
+                line-height: 16px;
+                font-family: sans-serif;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+              "
+            >
+              Start Chat
+            </a>
+            <div>
+              <span id="brandSpan"
+                style="font-size: 10px; font-family: sans-serif; color: #403f42; display: flex; gap: 2px; margin-top: 4px;"
+                ><svg
+                  width="10"
+                  height="9"
+                  viewBox="0 0 10 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.14767 4.78225C9.10306 4.66278 8.98878 4.58333 8.86106 4.58333H5.17148L7.29967 0.4455C7.36659 0.315333 7.33206 0.156139 7.21687 0.0656944C7.16126 0.0216944 7.09434 0 7.02773 0C6.95653 0 6.88534 0.0250556 6.8282 0.07425L4.58328 2.013L0.105978 5.87981C0.00942226 5.96322 -0.025411 6.09797 0.0192001 6.21744C0.0638112 6.33692 0.177783 6.41667 0.305506 6.41667H3.99509L1.86689 10.5545C1.79998 10.6847 1.83451 10.8439 1.9497 10.9343C2.00531 10.9783 2.07223 11 2.13884 11C2.21003 11 2.28123 10.9749 2.33837 10.9257L4.58328 8.987L9.06059 5.12019C9.15745 5.03678 9.19198 4.90203 9.14767 4.78225Z"
+                    fill="#FFAC33"
+                  />
+                </svg>
+                 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div id="whatsAppWidgetIcon"
+    style="position: fixed;
+    width: 76px;
+    height: 76px;
+    bottom: __BOTTOM_POSITIONING__;
+    __WIDGET_POSITION__: 15px;
+    text-align: right;
+    cursor: pointer;
+    z-index: 100;">
+    <img src="https://branding-resources.s3.ap-south-1.amazonaws.com/bot_files/prod/whatsapp_icon.png" id="waWidgetIcon"/>
+    </div>
+  </span>
+  <style>
+    #whatsAppWidgetSpan span,
+    #whatsAppWidgetSpan p,
+    #whatsAppWidgetSpan a,
+    #whatsAppWidgetSpan img,
+    #whatsAppWidgetSpan b,
+    #whatsAppWidgetSpan div,
+    #whatsAppWidgetSpan label,
+    #whatsAppWidgetSpan textarea,
+    #whatsAppWidgetSpan pre,
+    #whatsAppWidgetSpan button,
+    #whatsAppWidgetSpan svg,
+    #whatsAppWidgetSpan path,
+    #whatsAppWidgetSpan circle {
+    	height: unset;
+    	width: unset;
+    	max-width: unset;
+    	max-height: unset;
+    	border: unset;
+      margin: unset;
+      padding: unset;
+      color: unset;
+      background-color: unset;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+  </style>
+  `;
+
+var getBotConfigs = function () {
+  var xhttp = new XMLHttpRequest();
+  var response;
+  xhttp.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      response = JSON.parse(xhttp.responseText);
+      if (!Object.keys(response ? response : "").length) {
+        return;
+      } else {
+        webBotPosition = response.webBotPosition ?? "bottomright";
+        phoneNumber = response.phoneNumber;
+        prefilledMsg = response.prefilledMsg;
+        whatsAppWidgetPosition = response.whatsAppWidgetPosition;
+        if (urlParamsConfig?.wa_bot_position_override) {
+          whatsAppWidgetPosition = urlParamsConfig.wa_bot_position_override;
+        }
+        isWebBotDeployed = response.isWebBotDeployed;
+        customCSSLink = response.customCSSLink;
+        setWidgetPosition();
+        setWAUrl(phoneNumber, prefilledMsg);
+        setWidgetInsideHTML();
+        setBrandName();
+        popupBoxFunctionalities();
+        customCss();
+      }
+    }
+  };
+
+  xhttp.open(
+    "GET",
+    urlParamsConfig.server +
+      "/webchat_parameters/whatsapp-config/" +
+      urlParamsConfig.wa_bot_identifier,
+    true
+  );
+  xhttp.send();
+};
+
+var setWidgetPosition = function () {
+  if (
+    isWebBotDeployed &&
+    whatsAppWidgetPosition === "bottomright" &&
+    webBotPosition === "bottomright"
+  )
+    whatsAppWidgetPosition = "topright";
+  else if (
+    isWebBotDeployed &&
+    whatsAppWidgetPosition === "bottomleft" &&
+    webBotPosition === "bottomleft"
+  )
+    whatsAppWidgetPosition = "topleft";
+
+  switch (whatsAppWidgetPosition) {
+    case "bottomright":
+      updatedWidgetScript = whatsAppWidgetScript
+        .replace("__POPUP_POSITION__", "right")
+        .replace("__BOTTOM_POSITIONING__", "15px")
+        .replace("__CROSS_BTN_POSITIONING__", "265px")
+        .replace("__POPUP_BOTTOM_POSITIONING__", "95px")
+        .replace("__CROSS_BTN_POSITION__", "right")
+        .replace("__WIDGET_POSITION__", "right");
+      break;
+
+    case "bottomleft":
+      updatedWidgetScript = whatsAppWidgetScript
+        .replace("__POPUP_POSITION__", "left")
+        .replace("__BOTTOM_POSITIONING__", "15px")
+        .replace("__CROSS_BTN_POSITIONING__", "265px")
+        .replace("__POPUP_BOTTOM_POSITIONING__", "95px")
+        .replace("__CROSS_BTN_POSITION__", "left")
+        .replace("__WIDGET_POSITION__", "left");
+      break;
+
+    case "topright":
+      updatedWidgetScript = whatsAppWidgetScript
+        .replace("__POPUP_POSITION__", "right")
+        .replace("__BOTTOM_POSITIONING__", "95px")
+        .replace("__CROSS_BTN_POSITIONING__", "345px")
+        .replace("__POPUP_BOTTOM_POSITIONING__", "175px")
+        .replace("__CROSS_BTN_POSITION__", "right")
+        .replace("__WIDGET_POSITION__", "right");
+      break;
+
+    case "topleft":
+      updatedWidgetScript = whatsAppWidgetScript
+        .replace("__POPUP_POSITION__", "left")
+        .replace("__BOTTOM_POSITIONING__", "95px")
+        .replace("__CROSS_BTN_POSITIONING__", "345px")
+        .replace("__POPUP_BOTTOM_POSITIONING__", "175px")
+        .replace("__CROSS_BTN_POSITION__", "left")
+        .replace("__WIDGET_POSITION__", "left");
+      break;
+  }
+};
+
+var setWidgetInsideHTML = function () {
+  var widgetHTML = document.createElement("span");
+  widgetHTML.innerHTML = updatedWidgetScript;
+  document.body.appendChild(widgetHTML);
+};
+
+var setWAUrl = function (phoneNumber, prefilledMsg) {
+  var URL = `https://wa.me/${phoneNumber}?text=${prefilledMsg}`;
+  updatedWidgetScript = updatedWidgetScript.replace("__WHATSAPP_LINK__", URL);
+};
+
+function getUrlVariables(a) {
+  var b = document.getElementsByTagName("script");
+  for (var i = 0; i < b.length; i++) {
+    if (b[i].src && b[i].src.indexOf("/" + a) > -1) {
+      var c = b[i].src.split("?").pop().split("&");
+      var p = {};
+      for (var j = 0; j < c.length; j++) {
+        var d = c[j].split("=");
+        p[d[0]] = d[1];
+      }
+      return p;
+    }
+  }
+  return {};
+}
+
+var setBrandName = function () {
+  var brand = urlParamsConfig.brand;
+  var brandSpan = document.getElementById("brandSpan");
+  var textNode;
+  if (brand === "Engati") {
+    var engatiLink = document.createElement("a");
+    engatiLink.href =
+      "https://www.engati.com/ecommerce-chatbots?utm_source=shopify&utm_medium=web_widget&utm_campaign=shopify_widget";
+    engatiLink.setAttribute("target", "_blank");
+    engatiLink.setAttribute("rel", "noopener noreferrer");
+    engatiLink.title = "Engati.com";
+    engatiLink.style = "color: #403f42";
+    engatiLink.appendChild(document.createTextNode("Engati.com"));
+    textNode = document.createElement("div");
+    textNode.innerText = "Powered by ";
+    textNode.appendChild(engatiLink);
+    brandSpan.appendChild(textNode);
+  } else {
+    textNode = document.createTextNode("Powered by " + brand);
+    brandSpan.appendChild(textNode);
+  }
+};
+
+var urlVariables = getUrlVariables("whatsapp_widget");
+if (urlVariables.config) {
+  urlParamsConfig = JSON.parse(decodeURIComponent(urlVariables.config));
+  getBotConfigs();
+}
+
+function popupBoxFunctionalities() {
+  const toggleButton = document.getElementById("whatsAppWidgetIcon");
+  const closePopupBox = document.getElementById("crossBtn");
+  var getWhatsappWidgetElement = document.getElementById("popupBox");
+
+  if (getWhatsappWidgetElement) {
+    toggleButton.addEventListener("click", () => {
+      if (getWhatsappWidgetElement.style.display === "contents") {
+        getWhatsappWidgetElement.style.display = "none";
+      } else {
+        getWhatsappWidgetElement.style.display = "contents";
+      }
+    });
+
+    closePopupBox.addEventListener("click", () => {
+      getWhatsappWidgetElement.style.display = "none";
+    });
+  }
+}
+
+function customCss() {
+  if (customCSSLink) {
+    const customCss = document.createElement("link");
+    customCss.id = "waWidgetCustomStyles";
+    customCss.rel = "stylesheet";
+    customCss.href = customCSSLink;
+    document.head.append(customCss);
+  }
+}

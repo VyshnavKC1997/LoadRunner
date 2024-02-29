@@ -1,0 +1,16 @@
+[t24]
+SnapshotXmlFile=snapshot_23.xml
+ContentType=DummyContentType
+StepName=Url: login
+Total=2
+FileName1=t24.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t24_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t24_ResponseHeader.txt
+RawStepEndTime=1708665601819
+RawStepName=login
+RequestBodyFile=t24_RequestBody.txt
+RawStepStartTime=1708665601753
+URL1=https://www.tastynibbles.in/wpm@3698dd31wbfa453bap448c3218md5149de6/web-pixel-shopify-custom-pixel@0575/sandbox/modern/account/login?return_url=/account
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

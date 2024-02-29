@@ -1,0 +1,11 @@
+[t143]
+FileName1=t143.json
+URL1=https://www.tastynibbles.in/checkouts/unstable/graphql
+Total=1
+RequestHeaderFile=t143_RequestHeader.txt
+RequestBodyFile=t143_RequestBody.txt
+ResponseHeaderFile=t143_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_143.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,13 @@
+[t117]
+FileName1=t117.html
+URL1=https://lumberjack.razorpay.com/v1/track
+Total=2
+RequestHeaderFile=t117_RequestHeader.txt
+RequestBodyFile=t117_RequestBody.txt
+ResponseHeaderFile=t117_ResponseHeader.txt
+ContentType=image/webp
+SnapshotXmlFile=snapshot_117.xml
+FileName2=t117_Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_540x.webp
+URL2=https://www.tastynibbles.in/cdn/shop/products/Pack6_7d34722d-2393-4144-bb70-ef8ba37f0c49_540x.jpg?v=1671702467
+[ProtocolInfo]
+ProtocolId=QTWeb

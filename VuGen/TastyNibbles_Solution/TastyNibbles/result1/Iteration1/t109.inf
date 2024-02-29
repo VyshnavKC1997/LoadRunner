@@ -1,0 +1,16 @@
+[t109]
+SnapshotXmlFile=snapshot_106.xml
+ContentType=DummyContentType
+StepName=Custom Request: produce_batch_42
+Total=2
+FileName1=t109.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t109_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t109_ResponseHeader.txt
+RawStepEndTime=1708665638416
+RawStepName=produce_batch_42
+RequestBodyFile=t109_RequestBody.txt
+RawStepStartTime=1708665638020
+URL1=file:
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

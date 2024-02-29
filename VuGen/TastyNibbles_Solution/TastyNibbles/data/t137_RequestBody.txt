@@ -1,0 +1,2 @@
+"{\"query\":\"query BillingCountries{shop{id billingCountries{value:code label:name __typename}"
+"__typename}}\",\"variables\":{},\"operationName\":\"BillingCountries\"}"

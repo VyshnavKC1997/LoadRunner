@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\LoadRunner\TastyNibbles_Solution\TastyNibbles
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ed:\loadrunner\tastynibbles_solution\tastynibbles\\logfile.log
+d:\loadrunner\tastynibbles_solution\tastynibbles\\combined_TastyNibbles.c
+d:\loadrunner\tastynibbles_solution\tastynibbles\\pre_cci.c

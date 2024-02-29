@@ -1,0 +1,13 @@
+[t47]
+FileName1=t47.html
+URL1=https://lumberjack.razorpay.com/v1/track
+Total=2
+RequestHeaderFile=t47_RequestHeader.txt
+RequestBodyFile=t47_RequestBody.txt
+ResponseHeaderFile=t47_ResponseHeader.txt
+ContentType=text/javascript
+SnapshotXmlFile=snapshot_47.xml
+FileName2=t47_cart.html
+URL2=https://www.tastynibbles.in/cart.js?discos=true
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,16 @@
+[t103]
+SnapshotXmlFile=snapshot_100.xml
+ContentType=DummyContentType
+StepName=Url: kerala-fish-curry-with-coconut-milk-200g-pouch
+Total=2
+FileName1=t103.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t103_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t103_ResponseHeader.txt
+RawStepEndTime=1708665635695
+RawStepName=kerala-fish-curry-with-coconut-milk-200g-pouch
+RequestBodyFile=t103_RequestBody.txt
+RawStepStartTime=1708665635254
+URL1=https://www.tastynibbles.in/products/kerala-fish-curry-with-coconut-milk-200g-pouch?view=modal
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

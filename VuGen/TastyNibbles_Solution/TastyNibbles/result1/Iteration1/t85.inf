@@ -1,0 +1,16 @@
+[t85]
+SnapshotXmlFile=snapshot_84.xml
+ContentType=DummyContentType
+StepName=Custom Request: produce_3
+Total=2
+FileName1=t85.UNK
+FileName2=t19_1_css2.css
+RequestHeaderFile=t85_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t85_ResponseHeader.txt
+RawStepEndTime=1708665628407
+RawStepName=produce_3
+RequestBodyFile=t85_RequestBody.txt
+RawStepStartTime=1708665628037
+URL1=file:
+URL2=https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap

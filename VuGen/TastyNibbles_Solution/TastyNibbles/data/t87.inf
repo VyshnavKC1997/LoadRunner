@@ -1,0 +1,11 @@
+[t87]
+FileName1=t87_suggest.json
+URL1=https://www.tastynibbles.in/search/suggest.json?q=coconut&resources[type]=product%2Carticle&resources[limit]=4&resources[options][unavailable_products]=last&resources[options][fields]=title%2Cproduct_type%2Cvariants.title%2Cvendor
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_87.xml
+RequestHeaderFile=t87_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t87_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

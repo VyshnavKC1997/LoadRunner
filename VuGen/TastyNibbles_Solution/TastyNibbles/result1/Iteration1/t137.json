@@ -1,0 +1,1 @@
+{"data":{"shop":null},"errors":[{"message":"Invalid session token.","locations":[{"line":1,"column":24}],"path":["shop"],"extensions":{"code":"INVALID_SESSION_TOKEN"}}]}

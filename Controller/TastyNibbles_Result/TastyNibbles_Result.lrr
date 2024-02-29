@@ -1,0 +1,33 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=2023.0.0.0
+Path=Scenario1
+Subject=
+Result_file=D:\LoadRunner\Controller\TastyNibbles_Result\TastyNibbles_Result.lrr
+Description=
+ResultName=TastyNibbles_Result
+Time_Zone=-19800
+Start_time=1708665933
+Daylight_Bias=0
+Stop_time=1708666133
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Schedule 1
+Mode=Scenario Scheduling
+Scenario Duration=Start 3 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:01:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:30 (HH:MM:SS)
+Load Behavior=Initialize each Vuser just before it runs
+Global Schedule=ST3_1E15;R60;SP3_1E30;
+[Scripts]
+TastyNibbles=D:\LoadRunner\TastyNibbles_Solution\TastyNibbles\TastyNibbles.usr
+[Scripts_types]
+TastyNibbles=Multi+QTWeb

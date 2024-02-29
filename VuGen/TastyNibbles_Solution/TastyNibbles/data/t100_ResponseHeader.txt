@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Fri, 23 Feb 2024 04:06:46 GMT
+Content-Length: 0
+Connection: keep-alive
+access-control-allow-origin: *
+strict-transport-security: max-age=315360000; includeSubDomains
+vary: Origin
+x-razorpay-request-id: cnc1jlh09qdnqjk191vg
+
